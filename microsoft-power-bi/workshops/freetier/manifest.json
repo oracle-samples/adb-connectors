@@ -1,0 +1,16 @@
+{
+  "workshoptitle": "Connecting Microsoft Power BI Desktop to Oracle Autonomous Database",
+  "help": "vijay.balebail@oracle.com",
+  "tutorials": [
+    {
+      "title": "Power BI Connection Guide",
+      "description": "Guide",
+      "filename": "../../power-bi-desktop/power-bi-connector-guide.md"
+    },
+    {
+      "title": "Appendix 1. Autonomous Database Wallet",
+      "description": "Wallet",
+      "filename": "../../../common/wallet/wallet.md"
+    }
+  ]
+}
