@@ -94,20 +94,56 @@ BI Desktop was being used, then 32-bit unmanaged ODP.NET would be required.
 Unmanaged ODP.NET download is part of the `Oracle Data Access Components (ODAC)`, which can be
 downloaded for free from the Oracle website.
 
-5. From the **XCopy ODAC Packages** section on the bottom half of the [ODAC Download page](https://www.oracle.com/database/technologies/net-downloads.html), click on the
-`ODAC 19c (32-bit and 64-bit)` link. Do not use ODAC 21c versions currently.
-![odac](./images/odac.png)
-Log on to the Oracle website. In the `Platforms` drop down, select 64-bit or 32-bit Windows. Download
-64-bit ODAC 19.15.1 or higher if you are using 64-bit Power BI Desktop. Download 32-bit ODAC 19.15 or
-higher if you are using 32-bit Power BI Desktop. In the screen shot below, we will download 64-bit ODAC.
+5. From the [Oracle Client for Microsoft Tools](https://www.oracle.com/database/technologies/appdev/ocmt.html), page click on the download link, `“64-bit Oracle Client for Microsoft Tools”`
 
-![odacselect](./images/odacselect.png)
+   ![odac](./images/OracleClientSS.png)
 
-6. Now, we will install ODP.NET. Installation instructions are the same for 32-bit and 64-bit ODP.NET. Unzip the download contents to a staging directory (e.g., C:\xcopy64-install or C:\xcopy32-install).
-![xcopy64](./images/xcopy64.png)
+   Log on to the Oracle website. In the “Platforms” drop down, select 64-bit Windows, then download 64-bit Oracle Client for Microsoft Tools.
 
-7. Open a Windows command prompt **in administrator mode**. Navigate to the ODAC staging directory,
-then execute the following command to install and configure ODP.NET:
+6. *64-bit Power Desktop only*
+    64-bit Power BI Desktop requires 64-bit ODP.NET. If you are using 64-bit Power BI Desktop, download Oracle Client for Microsoft Tools.
+   ![odaselect](./images/oracleClientMicrosoft.png)
+
+   Look for Oracle Client for Microsoft Tools.exe. Click the EXE link on the left side to begin the download
+   process. Choose the local directory to download the executable to and click “Save”. You should now see
+   the download locally.
+
+   ![xcopy64install](./images/iconSS.png)
+
+   Double click the icon to begin the install process. Next, click the “Yes” button in the User Account Control
+   screen. You should now see the introductory install screen. Click the “Next” button.
+   ![windowswizard](./images/oraclewizard.png)
+
+   Choose the “Default” Oracle Client setup type and click the “Next” button.
+   ![cleintsetup](./images/ClientSetup.png)
+
+   Enter the “Destination Location” where the Oracle Client will be installed on your machine. Use the “Browse” button to specify the directory location. Click “Next” when completed.
+   ![PickLoc](./images/PickLocation.png)
+
+   Enter the directory where ODP.NET can find its Oracle Client configuration files, sqlnet.ora and tnsnames.ora, such as C:\data\wallet. Click “Next” when complete.
+   ![PickLoc](./images/SS.png)
+
+   The Oracle Client for Microsoft Tools is now ready to install. Click the “Install” button to proceed.
+   ![PickLoc](./images/installprog.png)
+
+   The ODP.NET install is now complete and configured for use on this machine. On the “Wizard Complete”
+   screen, you can choose to review the Oracle Client for Microsoft Tools README. Click the “Finish” button to
+   proceed.
+   ![PickLoc](./images/complete.png)
+
+7. ***32-bit Power BI Desktop only***
+    32-bit Power BI Desktop requires 32-bit ODP.NET. If you are using 32-bit Power BI Desktop, download 32-
+    bit ODAC 19.17 or higher.
+   ![PickLoc](./images/32bit.png)
+
+    Click the zip link on the left side to begin the download process. Choose the local directory to
+    download the executable to and click “Save”. You should now see the download locally.
+
+    To install 32-bit ODP.NET, unzip the 32-bit ODAC download contents to a staging directory (e.g.
+    C:\xcopy32-install).
+
+    Open a Windows command prompt **in administrator mode**. Navigate to the ODAC staging directory,
+    then execute the following command to install and configure ODP.NET:
 
 ```
 install.bat <component_name> <oracle_home_path> <oracle_home_name>
@@ -124,20 +160,20 @@ To configure ODP.NET for Power BI Desktop, use the following values:
 A sample execution of install.bat with these arguments looks like:
 `install.bat odp.net4 c:\oracle myhome true true c:\data\wallet`
 
-8. ***32-bit Power BI Desktop only***
-Add the 32-bit Oracle Client directory `(e.g. c:\oracle)` and its bin directory `(e.g. c:\oracle\bin)` to the Windows Path. You can do this by editing the Windows environment variable, Path.
-![pathvars](./images/pathvars.png)
-To ensure these directory path settings have precedence over existing Oracle Homes, move the settings
-up to the highest possible level in the directory order with the `Move Up` button.
+    Add the 32-bit Oracle Client directory `(e.g. c:\oracle)` and its bin directory `(e.g. c:\oracle\bin)` to the Windows Path. You can do this by editing the Windows environment variable, Path.
+    ![pathvars](./images/pathvars.png)
+    To ensure these directory path settings have precedence over existing Oracle Homes, move the settings
+    up to the highest possible level in the directory order with the `Move Up` button.
 
-9. If you are using tnsnames.ora file with your Oracle database, open the tnsnames.ora file to see which
+8. If you are using tnsnames.ora file with your Oracle database, open the tnsnames.ora file to see which
 ADB or database net service names you can connect to. Below you see three different ones:
 
 `adwptr_high`, `adwptr_low`, and `adwptr_medium`. You will use one of these values for the Power BI
 Desktop `Server` name when configuring your Oracle connection.
 ![tnsnames](./images/tnsnames.png)
 
-10. Open Power BI Desktop again. Click on “Get data” from the menu bar, then “More…” to begin connecting to Oracle database.
+9. Open Power BI Desktop again. Click on “Get data” from the menu bar, then “More…” to begin connecting to Oracle database.
+
 ![openpbi](./images/openpbi.png)
 
 Select `Database > Oracle database > Connect` to connect to your Oracle database.
@@ -155,7 +191,7 @@ the window so that you can use your database credentials. Then, enter your datab
 
 ![admin](./images/admin.png)
 
-11. . Congratulations! Power BI Desktop should now connect to ADB or on-premises Oracle database. In the
+10. Congratulations! Power BI Desktop should now connect to ADB or on-premises Oracle database. In the
 `Navigator` window, select the schema objects needed for your Microsoft Power BI Desktop file `(.pbix)`
 and `load the data`.
 
@@ -183,4 +219,4 @@ Restart Power BI Desktop and run your queries with the new setting.
 - **Author(s)** - Pedro Torres, Alex Keh, Database Product Management
 
 - **Contributor(s)** - Vijay Balebail, Milton Wan, Blake Hendricks Database Product Management
-- **Last Updated By/Date** - Blake Hendricks, October 2022
+- **Last Updated By/Date** - Blake Hendricks, January 2023
