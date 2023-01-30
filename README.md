@@ -2,33 +2,28 @@
 
 # Project name
 
-*Describe your project's features, functionality and target audience*
+This repository contained the list of documents explaining the step by step setting to establised connection with various partner applications with Autonomus database.
 
 ## Installation
 
-*Provide detailed step-by-step installation instructions*
+The Documents only contain "How to instructions". 
 
 ## Documentation
 
-*Developer-oriented documentation can be published on GitHub, but all product documentation must be published on <https://docs.oracle.com>*
-
-## Examples
-
-*Describe any included examples or provide a link to a demo/tutorial*
+The Documents only contain "How to instructions". Document would be for the most recently or popular version in use. Where ever needed multiple document based on Operating system, Cloud platfrom or Version would be provided. 
 
 ## Help
 
-*Inform users on where to get help or how to receive official support from Oracle (if applicable)*
+For any help or suggestions please for the instructions in CONTRIBUTING.md file
+
 
 ## Contributing
 
-*If your project has specific contribution requirements, update the CONTRIBUTING.md file to ensure those requirements are clearly explained*
-
-*This project welcomes contributions from the community. Before submitting a pull request, please [review our contribution guide](./CONTRIBUTING.md)*
+For any help or suggestions please for the instructions in CONTRIBUTING.md 
 
 ## Security
 
-*Please consult the [security guide](./SECURITY.md) for our responsible security vulnerability disclosure process*
+Not applicable
 
 ## License
 
