@@ -14,16 +14,16 @@ The Documents only contain "How to instructions". Document would be for the most
 
 ## Help
 
-For any help or suggestions please for the instructions in CONTRIBUTING.md file
+For any help or suggestions, refer to the instructions in CONTRIBUTING.md file
 
 
 ## Contributing
 
-For any help or suggestions please for the instructions in CONTRIBUTING.md 
+For any help or suggestions, refer to the instructions in CONTRIBUTING.md 
 
 ## Security
 
-Not applicable
+For any help or suggestions, refer to the instructions in SECURITY.md 
 
 ## License
 
