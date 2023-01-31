@@ -13,16 +13,15 @@ Where ever necessary multiple document based on Operating system, Cloud platfrom
 
 ## Help
 
-For any help or suggestions, refer the instructions in ./CONTRIBUTING.md file.
-
+For any suggestion and comment mail us at miltonwan_directs_ww_grp@oracle.com.
 
 ## Contributing
 
-For any help or suggestions, refer the instructions in ./CONTRIBUTING.md file.
+Please [review our contribution guide](./CONTRIBUTING.md).
 
 ## Security
 
-Refer to instructions in ./SECURITY.md file.
+Please consult the [security guide](./SECURITY.md) for our responsible security vulnerability disclosure process.
 
 ## License
 
