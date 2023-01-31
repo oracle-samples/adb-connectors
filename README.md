@@ -13,15 +13,15 @@ Where ever necessary multiple document based on Operating system, Cloud platfrom
 
 ## Help
 
-For any suggestion and comment mail us at miltonwan_directs_ww_grp@oracle.com
+For any suggestion and comment mail us at miltonwan_directs_ww_grp@oracle.com.
 
 ## Contributing
 
-Please [review our contribution guide](./CONTRIBUTING.md)
+Please [review our contribution guide](./CONTRIBUTING.md).
 
 ## Security
 
-Please consult the [security guide](./SECURITY.md) for our responsible security vulnerability disclosure process
+Please consult the [security guide](./SECURITY.md) for our responsible security vulnerability disclosure process.
 
 ## License
 
