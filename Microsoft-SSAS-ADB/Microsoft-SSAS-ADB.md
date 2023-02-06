@@ -1,6 +1,5 @@
 # Connecting Microsoft SQL Server Analysis Services to Oracle Autonomous Databases and On-premises Databases
-Author: Alex Keh, Pedro Torres
-Updated: January 2023
+
 
 This step-by-step tutorial guides how to configure Microsoft SQL Server Analysis Services (SSAS) connectivity to Oracle Autonomous Database (ADB) and on-premises databases. These instructions use unmanaged Oracle Data Provider for .NET (ODP.NET) for data access as required by SSAS. They work for on-premises database and both dedicated and shared infrastructure ADB. The instructions for on-premises databases setup also apply to Oracle Database Cloud Services and Oracle Exadata Cloud Service.
 
