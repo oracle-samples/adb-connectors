@@ -1,0 +1,16 @@
+{
+  "workshoptitle": "Connecting Microsoft Power BI Service to Oracle Autonomous Database using the Power BI Gateway",
+  "help": "vijay.balebail@oracle.com",
+  "tutorials": [
+    {
+      "title": "Power BI Gateway Connection Guide",
+      "description": "Guide",
+      "filename": "../../microsoft-power-bi-service/microsoft-power-bi-service.md"
+    },
+    {
+      "title": "Appendix 1. Autonomous Database Wallet",
+      "description": "Wallet",
+      "filename": "../../../common/wallet/wallet.md"
+    }
+  ]
+}
