@@ -1,6 +1,6 @@
 {
   "workshoptitle": "Connecting Microsoft Power BI Desktop to Oracle Autonomous Database",
-  "help": "vijay.balebail@oracle.com",
+  "help": ["blake.hendricks@oracle.com","alex.keh@oracle.com", "pedro.p.torres@oracle.com"],
   "tutorials": [
     {
       "title": "Power BI Connection Guide",

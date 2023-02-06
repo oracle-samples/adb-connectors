@@ -1,11 +1,11 @@
 {
-  "workshoptitle": "Connecting Microsoft Power BI Service to Oracle Autonomous Database using the Power BI Gateway",
+  "workshoptitle": "Connecting Microsoft SQL Server Integration Services and Data Tools to Oracle Autonomous Databases and On-premises Databases",
   "help": ["blake.hendricks@oracle.com","alex.keh@oracle.com", "pedro.p.torres@oracle.com"],
   "tutorials": [
     {
-      "title": "Power BI Gateway Connection Guide",
+      "title": "Microsoft SSIS SSDT Connection Guide",
       "description": "Guide",
-      "filename": "../../microsoft-power-bi-service/microsoft-power-bi-service.md"
+      "filename": "../../Microsoft-SSIS-SSDT-ADB/Microsoft-SSIS-SSDT-ADB.md"
     },
     {
       "title": "Appendix 1. Autonomous Database Wallet",
