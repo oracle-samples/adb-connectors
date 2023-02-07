@@ -1,0 +1,16 @@
+{
+  "workshoptitle": "Connecting Microsoft SQL Server Analysis Services to Oracle Autonomous Databases and On-premises Databases",
+  "help": ["blake.hendricks@oracle.com","alex.keh@oracle.com", "pedro.p.torres@oracle.com"],
+  "tutorials": [
+    {
+      "title": "Microsoft SSAS Connection Guide",
+      "description": "Guide",
+      "filename": "../../microsoft-ssas-adb/microsoft-ssas-adb.md"
+    },
+    {
+      "title": "Appendix 1. Autonomous Database Wallet",
+      "description": "Wallet",
+      "filename": "../../../common/wallet/wallet.md"
+    }
+  ]
+}
