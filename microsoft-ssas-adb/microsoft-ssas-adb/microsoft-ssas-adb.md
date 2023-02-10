@@ -17,7 +17,7 @@ This document assumes that an on-premises Oracle database or ADB, such as Autono
 Connecting to Oracle databases on-premises and ADB are similar. This tutorial will note the differences between them when setting up connectivity.
 
 If using ADB, you will need access to the Oracle Cloud Console that has access to your ADB instance. Below is a screenshot from the cloud console to a database named ADWPTR.
-![image](./images/image6.jpg)
+![image](../images/image6.jpg)
 
 SSAS uses unmanaged ODP.NET (Oracle.DataAccess.Client) for Oracle database connectivity. 32-bit processes can use 32-bit unmanaged ODP.NET. 64-bit processes can use 64-bit unmanaged ODP.NET.
 
@@ -31,7 +31,7 @@ This tutorial uses Visual Studio 2022 and Integrated Workspace to demonstrate co
 ## Oracle Client Installation and Setup Steps 
 
 For ADB, go to the cloud console screen for the ADB instance you will connect to. Start your ADB instance. Click on the “DB Connection” button. Download the corresponding ADB credentials zip file to the system that has Visual Studio/SSAS installed. These credential files (cwallet.sso, tnsnames.ora, and sqlnet.ora) will be used to connect SSAS to ADB. 
-![image](./images/image8.jpg)
+![image](../images/image8.jpg)
 
 
 ### For on-premises databases
@@ -41,7 +41,7 @@ The credential files required will depend on your database server setup. Typical
 Alternatively, an Easy Connect or Easy Connect Plus string can be used in lieu of credential files for on-premises databases. For example, the SSAS “Server” configuration setting can accept an Easy Connect string with the following format: `“<DB hostname>:<Port>/<Service Name>”`. If you use Easy Connect (Plus), you can skip the credential file downloading and setup steps in this tutorial.
 
 Place the Oracle database credentials on your Windows machine into a directory (e.g., C:\data\wallet). This machine is where SSAS is or will be installed on. For ADB, the credentials have been downloaded into a zip file that you will unzip into this directory. Note the directory location for use in upcoming steps.
-![image](./images/image5.png)
+![image](../images/image5.png)
 
  
 ### ADB only
@@ -64,8 +64,8 @@ adwbi_high = (description=(retry_count=20)(retry_delay=3)(address=(protocol=tcps
 ```
 After making your changes, save the file. 
 
-Unmanaged ODP.NET can be downloaded for free. From the (Oracle Client for Microsoft Tools page)[https://www.oracle.com/database/technologies/appdev/ocmt.html], click on the download link, “64-bit Oracle Client for Microsoft Tools”. 
-![image](./images/image7.png)
+Unmanaged ODP.NET can be downloaded for free. From the [Oracle Client for Microsoft Tools page](https://www.oracle.com/database/technologies/appdev/ocmt.html), click on the download link, “64-bit Oracle Client for Microsoft Tools”. 
+![image](../images/image7.png)
  
 
 Log on to the Oracle website. In the “Platforms” drop down, select 64-bit or 32-bit Windows. 
@@ -74,39 +74,39 @@ Log on to the Oracle website. In the “Platforms” drop down, select 64-bit or
 
 64-bit SSAS requires 64-bit ODP.NET. If you are using 64-bit, download **Oracle Client for Microsoft Tools**. 
 
-![image](./images/image10.png)
+![image](../images/image10.png)
 
 Look for **Oracle Client for Microsoft Tools.exe**. Click the EXE link on the left side to begin the download process. Choose the local directory to download the executable to and click “Save”. You should now see the download locally. 
-![image](./images/image9.png)
+![image](../images/image9.png)
 
 
 Double click the icon to begin the install process. Next, click the “Yes” button in the User Account Control screen. You should now see the introductory install screen. Click the “Next” button.
 
-![image](./images/image12.png)
+![image](../images/image12.png)
 
 Choose the “Default” Oracle Client setup type and click the “Next” button.
-![image](./images/image11.png)
+![image](../images/image11.png)
 
 
 Enter the “Destination Location” where the Oracle Client will be installed on your machine. Use the “Browse” button to specify the directory location. Click “Next” when completed.
 
-![image](./images/image14.png)
+![image](../images/image14.png)
 
 Enter the directory where ODP.NET can find its Oracle Client configuration files, sqlnet.ora and tnsnames.ora, such as C:\data\wallet. Click “Next” when complete.
-![image](./images/image13.png)
+![image](../images/image13.png)
 
 The Oracle Client for Microsoft Tools is now ready to install. Click the “Install” button to proceed.
-![image](./images/image17.png)
+![image](../images/image17.png)
 
 
 The ODP.NET install is now complete and configured for use on this machine. On the “Wizard Complete” screen, you may review the client README. Click the “Finish” button to proceed.
-![image](./images/image15.png)
+![image](../images/image15.png)
 
 ### 32-bit SSAS-Specific Setup
 
 32-bit SSAS requires 32-bit ODP.NET. If you are using 32-bit SSAS, download 32-bit ODAC 19.17 or higher.
 
-![image](./images/image16.png)
+![image](../images/image16.png)
 
 Click the zip file link on the left side to begin the download process. Choose the local directory to download the executable to and click “Save”. You should now see the download locally. 
 
@@ -114,7 +114,7 @@ To install 32-bit ODP.NET, unzip the 32-bit ODAC download contents to a staging 
  
 Open a Windows command prompt **in administrator mode**. 
 
-![image](./images/image18.png)
+![image](../images/image18.png)
 
 Navigate to the ODAC staging directory in the command prompt, then execute the following command format to install and configure ODP.NET: 
 install.bat `<component_name> <oracle_home_path> <oracle_home_name> <install_dependents> <machine_wide_configuration> <tns_admin_location>`
@@ -133,7 +133,7 @@ A sample execution of install.bat with these arguments looks like:
 `install.bat  odp.net4  c:\oracle  myhome  true true  c:\data\wallet`
 
 Add the 32-bit Oracle Client directory `(e.g., c:\oracle)` and its bin directory `(e.g., c:\oracle\bin)` to the Windows Path. You can do this by editing the Windows environment variable, `Path`. If the SSAS process runs under the Windows user context, such as Visual Studio, modify the user variables as seen below.
-![image](./images/image19.png)
+![image](../images/image19.png)
 
 
 If the SSAS process runs as a Windows service, set the `Path` in the system variables section instead. The system variables section is located below the user variables section.
@@ -141,7 +141,7 @@ If the SSAS process runs as a Windows service, set the `Path` in the system vari
 To ensure these directory path settings have precedence over existing Oracle Homes, move the settings up to the highest possible level in the directory order with the “Move Up” button.
 
 If you are using tnsnames.ora file with your Oracle database, open the tnsnames.ora file to see which ADB or database net service names you can connect to. Below you see three different ones: `“adwptr_high”, “adwptr_low”, and “adwptr_medium”`. You will use one of these values for the SSAS `“Server name”` when configuring your Oracle connection.
-![image](./images/image20.jpg)
+![image](../images/image20.jpg)
 
  
 ## Open Visual Studio (VS). 
@@ -152,34 +152,34 @@ Create a new “Analysis Services Tabular Project”. Supply a name for the proj
 ## Configure the Project
 
 In the Tabular Model Designer, set the Analysis Service instance to “Integrated Workspace” and “SQL Server 2022 / Azure Analysis Services (1600)”. Other compatibility levels work with Oracle database; however, the Oracle connectivity setup experience may differ. Click “Ok”.
-![image](./images/image21.png)
+![image](../images/image21.png)
 
 In the Tabular Model Explorer, right-click “Data Sources” and select “New Data Source”.
-![image](./images/image22.png)
+![image](../images/image22.png)
 
 ## Test Connection
 
 In the Get Data window, select “Oracle Database”, the click “Connect”.
-![image](./images/image23.png)
+![image](../images/image23.png)
 
 In the “Server” text box, enter your database net service name (e.g., adwptr_high) from Step 7 or an Easy Connect (Plus) string. Then, click “OK” to connect. 
 
-![image](./images/image24.png)
+![image](../images/image24.png)
 
 You will then be requested to enter your database credentials. Select “Database” on the left side of the window. Enter your database user name (e.g., ADMIN) and password. Click the “Connect” button.
 
-![image](./images/image25.png)
+![image](../images/image25.png)
  
 In the “Tabular Model Explorer” window, you should now see the Oracle connection under the Data Sources item. Let’s now retrieve the Oracle database schema objects we need to use for our SSAS project. 
 
 Right click the new Oracle data source (e.g., Oracle/adwptr_high). Select “Import New Tables”.
-![image](./images/image2.png)
+![image](../images/image2.png)
 
 In the Navigator window, you can browse the Oracle database schema for the objects your project will need. Select the schema objects to import. Click “Load’ when done.
-![image](./images/image3.png)
+![image](../images/image3.png)
 
 Congratulations! You now have successfully imported Oracle database schema objects into your SSAS project.
-![image](./images/image4.png)
+![image](../images/image4.png)
 
 
 ## Performance Tuning for Large Data Retrievals 

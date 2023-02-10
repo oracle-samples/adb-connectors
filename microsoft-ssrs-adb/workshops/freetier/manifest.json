@@ -1,11 +1,11 @@
 {
-  "workshoptitle": "Connecting Microsoft SQL Server Integration Services and Data Tools to Oracle Autonomous Databases and On-premises Databases",
+  "workshoptitle": "Connecting Microsoft SQL Server Reporting Services to Oracle Autonomous Databases and On-premises Databases",
   "help": ["blake.hendricks@oracle.com","alex.keh@oracle.com", "pedro.p.torres@oracle.com"],
   "tutorials": [
     {
-      "title": "Microsoft SSIS SSDT Connection Guide",
+      "title": "Microsoft SRS Connection Guide",
       "description": "Guide",
-      "filename": "../../Microsoft-SSIS-SSDT-ADB/Microsoft-SSIS-SSDT-ADB.md"
+      "filename": "../../microsoft-ssrs-adb/microsoft-ssrs-adb.md"
     },
     {
       "title": "Appendix 1. Autonomous Database Wallet",

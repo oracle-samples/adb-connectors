@@ -18,7 +18,7 @@ Connecting to Oracle databases on-premises and ADB are similar. This tutorial wi
 
 If using ADB, you will need access to the Oracle Cloud Console that has access to your ADB instance. Below is a screenshot from the cloud console to a database named ADWPTR.
 
-![screenshot](./images/image3.jpg)
+![screenshot](../images/image3.jpg)
 
 SSRS uses managed ODP.NET (Oracle.ManagedDataAccess.Client) for Oracle database connectivity. This tutorial uses Visual Studio 2022 to create a report server project.
 
@@ -30,7 +30,7 @@ SSRS uses managed ODP.NET (Oracle.ManagedDataAccess.Client) for Oracle database 
 3. Click on the “DB Connection” button. 
 4. Download the corresponding ADB credentials zip file to the system that has Visual Studio/SSRS installed. 
    These credential files (cwallet.sso, tnsnames.ora, and sqlnet.ora) will be used to connect SSRS to ADB.
-   ![image](./images/image5.jpg)
+   ![image](../images/image5.jpg)
 
 ### For on-premises databases
 1. The credential files required will depend on your database server setup. 
@@ -45,7 +45,7 @@ This machine is where SSRS is or will be installed on.
 For ADB, the credentials have been downloaded into a zip file that you will unzip into this directory. 
 Note the directory location for use in upcoming steps.
 
-![screenshot](./images/image2.png)
+![screenshot](../images/image2.png)
 
 
 ### ADB only
@@ -71,46 +71,46 @@ WALLET_LOCATION = (SOURCE = (METHOD = file) (METHOD_DATA = (DIRECTORY="?/network
 
 3. Managed ODP.NET can be downloaded for free. From the [Oracle Client for Microsoft Tools](https://www.oracle.com/database/technologies/appdev/ocmt.html) page, click on the download link, “64-bit Oracle Client for Microsoft Tools”.
 
-![screenshot](./images/image4.png)
+![screenshot](../images/image4.png)
 
 Log on to the Oracle website. In the “Platforms” drop down, select 64-bit Windows.
 
 4. Download Oracle Client for Microsoft Tools.
 
-![screenshot](./images/image7.png)
+![screenshot](../images/image7.png)
 
 Look for Oracle Client for Microsoft Tools.exe. Click the EXE link on the left side to begin the download process. Choose the local directory to download the executable to and click “Save”. You should now see the download locally.
 
-![screenshot](./images/image6.png)
+![screenshot](../images/image6.png)
 
 
 Double click the icon to begin the install process. Next, click the “Yes” button in the User Account Control screen. You should now see the introductory install screen. Click the “Next” button.
 
-![screenshot](./images/image9.png)
+![screenshot](../images/image9.png)
 
 Choose the “Default” Oracle Client setup type and click the “Next” button.
 
-![screenshot](./images/image8.png)
+![screenshot](../images/image8.png)
 
 Enter the “Destination Location” where the Oracle Client will be installed on your machine. Use the “Browse” button to specify the directory location. Click “Next” when completed.
 
-![screenshot](./images/image11.png)
+![screenshot](../images/image11.png)
 
 Enter the directory where ODP.NET can find its Oracle Client configuration files, sqlnet.ora and tnsnames.ora, such as C:\data\wallet. Click “Next” when complete.
 
-![screenshot](./images/image10.png)
+![screenshot](../images/image10.png)
 
 The Oracle Client for Microsoft Tools is now ready to install. Click the “Install” button to proceed.
 
-![screenshot](./images/image14.png)
+![screenshot](../images/image14.png)
 
 The ODP.NET install is now complete and configured for use on this machine. On the “Wizard Complete” screen, you may review the client README. Click the “Finish” button to proceed.
 
-![screenshot](./images/image12.png)
+![screenshot](../images/image12.png)
 
 If you are using tnsnames.ora file with your Oracle database, open the tnsnames.ora file to see which ADB or database net service names you can connect to. Below you see three different ones: “adwptr_high”, “adwptr_low”, and “adwptr_medium”. You will use one of these values for the SSRS “Server name” when configuring your Oracle connection.
 
-![screenshot](./images/image13.jpg)
+![screenshot](../images/image13.jpg)
 
 6. Open Visual Studio (VS). This tutorial uses VS 2022 screen shots, but the usage experience will be similar for earlier VS versions. 
 
@@ -118,19 +118,19 @@ Create a new “Report Server Project”. Supply a name for the project.
 
 In Solution Explorer, right-click “Shared Data Sources” and select “Add New Data Source”.
 
-![screenshot](./images/image15.png)
+![screenshot](../images/image15.png)
 
 In the Shared Data Source Properties window, enter a name for the data source, choose the “Oracle Database” as the type in the drop-down menu, and click the “Build” button to start entering the connection information.
 
-![screenshot](./images/image16.png)
+![screenshot](../images/image16.png)
 
 On the Connection Properties window, verify the Data Source is “Oracle Database (ODP.NET)”. Enter the Server Name (e.g., adwptr_high). Enter the database user name (e.g., ADMIN) and password. 
 
-![screenshot](./images/image17.png)
+![screenshot](../images/image17.png)
 
 Click “Test Connection” to validate a working database connection. 
 
-![screenshot](./images/image18.png)
+![screenshot](../images/image18.png)
 
 Click “Ok” to go back to the Connection Properties window. Click “Ok” on this window as well to return to the Shared Data Source Properties window. Click “Ok”
 
@@ -139,21 +139,21 @@ Click “Ok” to go back to the Connection Properties window. Click “Ok” on
 
 Right click the Reports folder. Select “Add New Report”.
 
-![screenshot](./images/image19.png)
+![screenshot](../images/image19.png)
 
 In the Report Wizard, select the data source (e.g., Oracle) you just created. Click “Next”.
 `
-![screenshot](./images/image20.png)
+![screenshot](../images/image20.png)
 
 Enter the query to execute against the Oracle database. Click “Next”.
 
-![screenshot](./images/image21.png)
+![screenshot](../images/image21.png)
 
 Select the report type, tabular or matrix. Click “Next”. Then, design how to group the table data. Click “Finish”. Supply a name for the report (e.g., Oracle Report). Click “Finish”.
 
 8. Congratulations! You have successfully imported Oracle database schema objects into your SSRS project.
 
-![screenshot](./images/image22.png)
+![screenshot](../images/image22.png)
 
 ## Performance Tuning for Large Data Retrievals 
 
