@@ -1,0 +1,17 @@
+{
+    "workshoptitle": "Connecting IBM Datastage to Oracle Autonomous Database",
+    "help": ["blake.hendricks@oracle.com"],
+    "tutorials": [
+      {
+        "title": "IBM Datastage Connection Guide",
+        "description": "Guide",
+        "filename": "../../datastage.md"
+      },  
+      {
+        "title": "Appendix 1. Autonomous Database Wallet",
+        "description": "Wallet",
+        "filename": "../../../common/wallet/wallet.md"
+      }
+    ]
+  }
+  
