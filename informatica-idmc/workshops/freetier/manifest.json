@@ -1,0 +1,11 @@
+{
+  "workshoptitle": "Connecting from Informatica IDMC to Oracle Autonomous Database",
+  "help": "miltonwan_directs_ww_grp@oracle.com",
+  "tutorials": [
+    {
+      "title": "IDMC Connection Guide",
+      "description": "Connection Guide",
+      "filename": "../../idmc-connector/idmc-connector.md"
+    }
+  ]
+}
