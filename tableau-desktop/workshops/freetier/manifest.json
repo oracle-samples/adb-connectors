@@ -1,0 +1,21 @@
+{
+  "workshoptitle": "Connecting Tableau Desktop to Oracle Autonomous Database",
+  "help": "vijay.balebail@oracle.com",
+  "tutorials": [
+    {
+      "title": "Tableau Desktop Connection Guide",
+      "description": "Introduction",
+      "filename": "../../tableau-dekstop/tableau-desktop-connector-guide.md"
+    },
+    {
+      "title": "Appendix 1. Download the Wallet",
+      "description": "Wallet",
+      "filename": "../../../common/wallet/wallet.md"
+    },
+    {
+      "title": "Appendix 2. Oracle Instant Client for Windows Configuration",
+      "description": "Instant Client Configuration",
+      "filename": "../../../common/instant-client/instant-client-windows-64.md"
+    }
+  ]
+}
