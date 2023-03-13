@@ -8,8 +8,8 @@ These instructions use JDBC Thin driver from Oracle.
 
 - This document assumes that ADB, such as Autonomous Data Warehouse (ADW) or Autonomous Transaction Processing (ATP), or Autonomous JSON Database (AJD) is provisioned and Dataiku is installed on a machine (local, OCI, or other cloud).   To provision ADB, see [here](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/autonomous-provision.html#GUID-0B230036-0A05-4CA3-AF9D-97A255AE0C08).
 
-- Oracle JDBC Thin driver is downloaded and configured.  Specific instructions on installing the jar file to dataiku are [here](https://github.com/mw-orcl/adb-connectors/blob/main/common/jdbc/jdbc-thin.md).
-- ADB Wallet is [downloaded](https://github.com/mw-orcl/adb-connectors/blob/main/common/wallet/wallet.md) on your machine running dataiku.
+- Oracle JDBC Thin driver is downloaded and configured.  Specific instructions on installing the jar file to dataiku are [here](hhttps://github.com/oracle-samples/adb-connectors/blob/main/common/jdbc/jdbc-thin.md).
+- ADB Wallet is [downloaded](https://github.com/oracle-samples/adb-connectors/blob/main/common/wallet/wallet.md) on your machine running dataiku.
 
 ## **Configure the Connection**
 
