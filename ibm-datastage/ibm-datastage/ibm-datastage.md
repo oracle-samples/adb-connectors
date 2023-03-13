@@ -45,28 +45,28 @@ In this lab, you will:
 
 3. Download the DataDirect ODBC Drivers. Once unzipped and installed, open the 32-bit ODBC Administrator on Windows to configure the system DSN.
 
-![images](../images/step3.png)
+![images](images/step3.png)
 
 4. Click on Add to configure a new system DSN under the System DSN tab. Locate the DataDirect 8.0 Oracle Wire Protocol from the list of drivers presented to you and press `Finish`.
 
-![images](../images/step4.png)
+![images](images/step4.png)
 
 5. You will then be presented with a form for the DSN attributes. Fill in the DSN name, your TNS service name (this can be found in the tnsnames.ora file in TNS_ADMIN location) and complete path to the tnsnames.ora  `(<wallet_directory>\tnsnames.ora)`
 
-    ![images](../images/step5.png)
+    ![images](images/step5.png)
 
 6. . Next click on the `Security` tab and choose Encryption Method to be 1-SSL in the Encryption section. Also supply the path and name of the wallet to be used. Data Direct prefers the ewallet.p12 wallet file. The path should be `<wallet_directory>\ewallet.p12.` Supply this information for both the Trust Store as well as the Key Store sections. The password to be supplied here is the `KeyStore/TrustStore` password. You may optionally supply the Database username in the Authentication section.
 
-    ![image](../images/step6.png)
+    ![image](images/step6.png)
 
 7. Test your connection by pressing the `Test Connect` button. Supply the database
 username and password to test the connection
 
-  ![image](../images/step7.png)
+  ![image](images/step7.png)
 
 8. You should get a Connection Established message.
 
-![image](../images/step8.png)
+![image](images/step8.png)
 
 
 9. You are now ready to use this system DSN for your application!
