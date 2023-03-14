@@ -1,7 +1,4 @@
-# Creating a connection from Informatica Intelligent Data Management Cloud (IDMC) to  Oracle Autonomous Data Warehouse (ADW)
-
-
-## **Introduction**
+**Introduction**
 
 This document provides an overview of the configuration steps to create a connection in IDMC to Oracle Autonomous Database (OADB) as target endpoint.
 
@@ -76,11 +73,7 @@ The diagram below provides an architecture overview.
 5. Click **Save**.
 6. Click **Test Connection** to test the connection. Make sure all fields are entered correctly and test result is successful.
 
-
     ![Connection Configuration Screenshot](./images/connection-screenshot.png)
-
-
-
 
 ## **Additional Reference**
 1.	YouTube video: [Setting Up an Oracle Autonomous Database Connection with a Secure Agent in IICS](https://www.youtube.com/watch?v=4tCKP6D1myo)
@@ -88,8 +81,6 @@ The diagram below provides an architecture overview.
 3.	Documentation: [Secure Agent Installation](https://docs.informatica.com/cloud-common-services/administrator/current-version/runtime-environments/secure-agent-installation.html)
 4.	[Analytics Platform Reference Architecture](https://docs.oracle.com/en/solutions/informatica-on-oci/index.html#GUID-6A097301-4F34-40B4-8816-76F71362EAFD)
 5.	Oracle LiveLabs [Transform Data with Informatica Data Integration](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/view-workshop?wid=3394)
-
-
 
 ## **Acknowledgements**
 * **Author(s)** - Eddy Widjaja (Informatica), Rajeev Rumale (Oracle)
