@@ -1,4 +1,4 @@
-## **Connecting Dataiku to Oracle Autonomous Database**
+**Introduction**
 
 This guide shows you how to configure Dataiku connectivity to Oracle Autonomous Database (ADB).
 
