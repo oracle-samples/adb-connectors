@@ -54,7 +54,7 @@ dashboard.
 
 ![dataviz-7](./images/dataviz-7.png)
 
-For instructions on how to get started, follow the SaCa DataViz Video Tutorials available at [here](https://www.idataviz.com) and refer to the full set of online documentation [here]. (https://www.idataviz.com/doc/)
+For instructions on how to get started, follow the SaCa DataViz Video Tutorials available at [here](https://www.idataviz.com) and refer to the full set of online documentation [here](https://www.idataviz.com/doc/).
 
 ## **Acknowledgements**
 
