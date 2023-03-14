@@ -3,7 +3,7 @@
   "help": "vijay.balebail@oracle.com",
   "tutorials": [
     {
-      "title": "dataiku Connection Guide",
+      "title": "Dataiku Connection Guide",
       "description": "Introduction",
       "filename": "../../dataiku-connector-guide.md"
     },
