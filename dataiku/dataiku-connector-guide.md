@@ -29,8 +29,6 @@ From the tnsnames.ora file, locate the ADB service you want to connect to.  Note
 
     ```
 
-
-
 ## **Acknowledgements**
 * **Author(s)** - Milton Wan, Database Product Management
 * **Contributor(s)** -
