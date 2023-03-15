@@ -1,9 +1,9 @@
 {
-  "workshoptitle": "Connecting dataiku to Oracle Autonomous Database",
-  "help": "vijay.balebail@oracle.com",
+  "workshoptitle": "Connecting Dataiku to Oracle Autonomous Database",
+  "help": "miltonwan_directs_ww_grp@oracle.com",
   "tutorials": [
     {
-      "title": "dataiku Connection Guide",
+      "title": "Dataiku Connection Guide",
       "description": "Introduction",
       "filename": "../../dataiku-connector-guide.md"
     },
