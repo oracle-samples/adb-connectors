@@ -1,0 +1,11 @@
+{
+  "workshoptitle": "Connecting HVR Software to Oracle Autonomous Database",
+  "help": "vijay.balebail@oracle.com",
+  "tutorials": [
+    {
+      "title": "HVR Software Connection Guide",
+      "description": "Introduction",
+      "filename": "../../hvr software-connector.md"
+    }
+  ]
+}

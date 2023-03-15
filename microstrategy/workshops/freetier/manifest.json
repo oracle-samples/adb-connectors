@@ -1,0 +1,11 @@
+{
+  "workshoptitle": "Connecting Microstrategy to Oracle Autonomous Database",
+  "help": "vijay.balebail@oracle.com",
+  "tutorials": [
+    {
+      "title": "Microstrategy Connection Guide",
+      "description": "Introduction",
+      "filename": "../../microstrategy-connector.md"
+    }
+  ]
+}

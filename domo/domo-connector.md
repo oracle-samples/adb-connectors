@@ -22,7 +22,7 @@ To connect to Oracle Autonomous Data Warehouse and create a Domo DataSet, you mu
 
 **Steps**
 
-1. Download the credentials file from the ADW administration console by following the instructions outlined [here](../common/wallet/wallet.md). Keep the Credential wallet in its original format which is the Zip format.
+1. [Download](../common/wallet/wallet.md) the Wallet from the ADW administration console. Keep the Credential wallet in its original format which is the Zip format.
 2. Extract the certificate authority configuration information from the Credential wallet using **certutil** (Windows) or **base64** (Mac/Linux), as follows (**<wallet.zip>** is the downloaded Credentials wallet zip file):
 
 ​					***Windows: certutil -encode <wallet.zip> encoded_wallet.txt*** 
