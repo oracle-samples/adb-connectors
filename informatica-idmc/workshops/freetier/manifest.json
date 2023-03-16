@@ -4,7 +4,7 @@
   "tutorials": [
     {
       "title": "IDMC Connection Guide",
-      "description": "Connection Guide",
+      "description": "IDMC Connection Guide",
       "filename": "../../idmc-connector/idmc-connector.md"
     }
   ]
