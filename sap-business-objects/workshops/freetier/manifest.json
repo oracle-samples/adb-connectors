@@ -1,0 +1,26 @@
+{
+  "workshoptitle": "Connecting dataiku to Oracle Autonomous Database",
+  "help": "vijay.balebail@oracle.com",
+  "tutorials": [
+    {
+      "title": "dataiku Connection Guide",
+      "description": "Introduction",
+      "filename": "../../dataiku-connector-guide.md"
+    },
+    {
+      "title": "Appendix 1. Connecting with Wallet",
+      "description": "Introduction",
+      "filename": "../../../common/wallet/wallet.md"
+    },
+    {
+      "title": "Appendix 2. Connecting without Wallet",
+      "description": "Introduction",
+      "filename": "../../../common/tls-no-wallet/no-wallet.md"
+    },
+    {
+      "title": "Appendix 3. Oracle JDBC Download and Configuration",
+      "description": "Configuration",
+      "filename": "../../../common/jdbc/jdbc-thin.md"
+    }
+  ]
+}

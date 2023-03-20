@@ -1,0 +1,11 @@
+{
+  "workshoptitle": "Connecting DOMO to Oracle Autonomous Database",
+  "help": "vijay.balebail@oracle.com",
+  "tutorials": [
+    {
+      "title": "DOMO Connection Guide",
+      "description": "Introduction",
+      "filename": "../../domo-connector.md"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "workshoptitle": "Connecting Data Direct to Oracle Autonomous Database",
+  "help": "vijay.balebail@oracle.com",
+  "tutorials": [
+        {
+      "title": "Data Direct Connection Guide",
+      "description": "Introduction",
+      "filename": "../../data-direct-connector.md"
+    }
+  ]
+}

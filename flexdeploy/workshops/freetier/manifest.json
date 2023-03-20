@@ -1,0 +1,11 @@
+{
+  "workshoptitle": "Connecting FlexDeploy to Oracle Autonomous Database",
+  "help": "Kirk.gustafson@oracle.com",
+  "tutorials": [
+    {
+      "title": "FlexDeploy Connection Guide",
+      "description": "Introduction",
+      "filename": "../../flexdeploy-connector.md"
+    }
+  ]
+}
