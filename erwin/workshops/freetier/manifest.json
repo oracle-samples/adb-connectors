@@ -1,0 +1,17 @@
+{
+  "workshoptitle": "Connecting Erwin to Oracle Autonomous Database",
+  "help": "vijay.balebail@oracle.com",
+  "tutorials": [
+
+    {
+      "title": "Erwin Connection Guide",
+      "description": "Introduction",
+      "filename": "../../erwin-connector-guide.md"
+    },
+    {
+      "title": "Appendix 1. Connecting with Wallet",
+      "description": "Wallet",
+      "filename": "../../../common/wallet/wallet.md"
+    }
+  ]
+}
