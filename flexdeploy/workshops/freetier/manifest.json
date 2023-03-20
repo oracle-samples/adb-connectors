@@ -6,6 +6,21 @@
       "title": "FlexDeploy Connection Guide",
       "description": "Introduction",
       "filename": "../../flexdeploy-connector.md"
+    },
+    {
+      "title": "Connecting with Wallet",
+      "description": "Connecting with Wallet",
+      "filename": "../../../common/wallet/wallet.md"
+    },
+    {
+      "title": "Connecting without Wallet",
+      "description": "Connecting without Wallet",
+      "filename": "../../../common/tls-no-wallet/no-wallet.md"
+    },
+    {
+      "title": "JDBC Configuration",
+      "description": "JDBC Configuration",
+      "filename": "../../../common/jdbc/jdbc-thin.md"
     }
   ]
 }
