@@ -109,8 +109,11 @@ Edit file $WILDFLY\_HOME/standalone/configuration/standalone.xml and add the fol
         <password>YOURPASSWORD</password>
     </security>
     <validation>
-        <valid-connection-checker class-name="org.jboss.jca.adapters.jdbc.extensions.oracle.OracleValidConnectionChecker"/>          <background-validation>true</background-validation>
-        <stale-connection-checker class-name="org.jboss.jca.adapters.jdbc.extensions.oracle.OracleStaleConnectionChecker"/>          <exception-sorter class-name="org.jboss.jca.adapters.jdbc.extensions.oracle.OracleExceptionSorter"/>          </validation>
+        <valid-connection-checker class-name="org.jboss.jca.adapters.jdbc.extensions.oracle.OracleValidConnectionChecker"/>          
+        <background-validation>true</background-validation>
+        <stale-connection-checker class-name="org.jboss.jca.adapters.jdbc.extensions.oracle.OracleStaleConnectionChecker"/>          
+        <exception-sorter class-name="org.jboss.jca.adapters.jdbc.extensions.oracle.OracleExceptionSorter"/>          
+    </validation>
 </datasource>
 ```
 
