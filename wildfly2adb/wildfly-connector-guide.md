@@ -8,7 +8,7 @@ Prerequisites:
 
 | Validation Matrix  | Version  |
 | ------------- | ------------- |
-| App Version  | X.0.0  |
+| App Version  | 26.1.2.Final  |
 | Oracle Client  | 19.17  |
 
 ### **Prerequisites**
@@ -45,7 +45,7 @@ chmod -R 600 /opt/oracle/wallet
 
 ## Step 4: Add the Oracle JDBC driver to WildFly
 
-1. Download the ojdbc8-full version from Oracle. The full version downloads companion jars, which include oraclepki.jar, osdt_core.jar, and osdt_cert.jar. These files are required to connect to an Autonomous database with the wallet.
+1. Download the [ojdbc8-full](https://download.oracle.com/otn-pub/otn_software/jdbc/1815/ojdbc8-full.tar.gz) version from Oracle. The full version downloads companion jars, which include oraclepki.jar, osdt\_core.jar, and osdt\_cert.jar. These files are required to connect to an Autonomous database with the wallet.
 
 2. Create a new directory named oracle in the WildFly module directory and copy the Oracle JDBC driver jar file. Use the following commands to achieve this:  
 
@@ -81,7 +81,7 @@ Save the file and close it.
 
 ## Step 6: Add the driver configuration.
 
-In the configuration file standalone.xml, add the entry within the <drivers> ... </drivers> tag. Edit file $WILDFLY_HOME/standalone/configuration/standalone.xml and add the following:
+In the configuration file standalone.xml, add the entry within the <drivers> ... </drivers> tag. Edit file $WILDFLY\_HOME/standalone/configuration/standalone.xml and add the following:
 
 ```
 <driver name="oracle" module="com.oracle">
@@ -91,7 +91,7 @@ In the configuration file standalone.xml, add the entry within the <drivers> ...
 
 ## Step 7: Create a Datasource configuration file
 
-Edit file $WILDFLY_HOME/standalone/configuration/standalone.xml and add the following within the tag <datasources>...</datasources>.
+Edit file $WILDFLY\_HOME/standalone/configuration/standalone.xml and add the following within the tag <datasources>...</datasources>.
 
 ```
 <datasource jndi-name="java:jboss/datasources/oracleDS_mtls2" pool-name="MTLS2" enabled="true" use-java-context="true" statistics-enabled="true">
