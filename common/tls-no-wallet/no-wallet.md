@@ -8,7 +8,7 @@ You can connect your application to ADB without a wallet using one way TLS.  The
 
 2. Uncheck the box Require mutual TLS (mTLS) authentication.
 
-![adb](./images/acl.png)
+![adb](./images/acl.PNG)
 
 ### Private Endpoint Access
 
@@ -20,7 +20,7 @@ You can connect your application to ADB without a wallet using one way TLS.  The
 
    Note: You can also configure a network security group which allow you to define security rules for a set of VNICs instead of the entire subnet as with Security Lists.  For more information, see [here](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/networksecuritygroups.htm).
 
-![adb-wallet](./images/private-endpoint.png)
+![adb-wallet](./images/private-endpoint.PNG)
 
  
 
