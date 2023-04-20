@@ -1,0 +1,11 @@
+{
+  "workshoptitle": "Connection without wallet to Oracle Autonomous Database",
+  "help": "miltonwan_directs_ww_grp@oracle.com",
+  "tutorials": [
+        {
+      "title": "Data Direct Connection Guide",
+      "description": "Introduction",
+      "filename": "../../no-wallet.md"
+    }
+  ]
+}
