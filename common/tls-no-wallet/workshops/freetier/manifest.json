@@ -3,7 +3,7 @@
   "help": "miltonwan_directs_ww_grp@oracle.com",
   "tutorials": [
         {
-      "title": "Data Direct Connection Guide",
+      "title": "Connecting without Wallet",
       "description": "Introduction",
       "filename": "../../no-wallet.md"
     }
