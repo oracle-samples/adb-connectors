@@ -20,7 +20,7 @@ You can connect your application to ADB without the wallet (mTLS) using one way 
 
 Applications deployed on an OCI VCN can access ADB from private endpoints.  To do this you must configure a network security group (NSG) and define security rules for access to ADB.  The source CIDR should be where your application is deployed, and the destination port should be 1521. An example is shown below. For more information about NSG, see [here](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/networksecuritygroups.htm).
 
-![adb-nsg](./images/nsg1.png)
+![adb-nsg](./images/nsg-1.png)
 
 Once you have configured the network security group, go back to ADB and configure network access with private endpoint.
 
