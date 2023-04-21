@@ -34,7 +34,6 @@ Once you have configured the network security group, go back to ADB and configur
 
 ![private-endpoint1](./images/private-endpoint1.png)
 
-![private-endpoint2](./images/private-endpoint2.png)
 
 ### Get the TLS Connection string
 
