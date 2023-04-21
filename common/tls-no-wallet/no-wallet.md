@@ -1,5 +1,7 @@
 ## Connect with one way TLS without a Wallet
 
+![acl](./images/acl1-diagram.png)
+
 You can connect your application to ADB without the wallet (mTLS) using one way TLS.  There is no need to download the ADB wallet for TLS network access.  You can connect your application securely from a public connection by setting ACLs or connect privately inside the VCN where your application is deployed by configuring a private endpoint.  Both are configured during the ADB provisioning but you can also change and update the network access after provisioning.
 
 ### ACL Access
@@ -13,6 +15,8 @@ You can connect your application to ADB without the wallet (mTLS) using one way 
 ![adb](./images/acl1.png)
 
 ### Private Endpoint Access
+
+![pe](./images/private-endpoint-diagram.png)
 
 Applications deployed on an OCI VCN can access ADB from private endpoints.  To do this you must configure a network security group and define security rules for access to ADB.  The source CIDR should be where your application is deployed, and the destination port should be 1521. An example is shown below. For more information, see [here](https://docs.oracle.com/en-us/iaas/Content/Network/Concepts/networksecuritygroups.htm).
 
