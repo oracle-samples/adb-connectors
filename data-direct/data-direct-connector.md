@@ -27,33 +27,33 @@ Please check the analytic tool documentation in case they have specific connecti
 4. Below is a pictorial example for your reference. MSFT 64 bit Windows OS has been used for the example below.
 
     Download the DataDirect ODBC Drivers.
-    ![Picture1](./images/Picture1.png)                              
+    ![Picture_1](./images/picture_1.png)                              
 
     Once unzipped and installed, open the 64 bit ODBC Administrator on Windows to configure system DSN that uses the DataDirect driver.
 
-    ![Picture1](./images/Picture2.png)
+    ![Picture_2](./images/picture_2.png)
 
     Click on Add to configure a new system DSN under the System DSN tab. Locate the DataDirect 8.0 Oracle Wire Protocol from the list of drivers presented to you and press finish.
 
-    ![Picture1](./images/Picture3.png)
+    ![Picture_3](./images/picture_3.png)
 
-    You will be presented with a form for the DSN attributes. Fill in the DSN name, your TNS service name (this can be found in the tnsnames.ora file in TNS_ADMIN location) and complete path to the tnsnames.ora (<*wallet_directory*>\tnsnames.ora)
+    You will be presented with a form for the DSN attributes. Fill in the DSN name, your TNS service name (this can be found in the tnsnames.ora file in TNS\_ADMIN location) and complete path to the tnsnames.ora (<*wallet_directory*>\tnsnames.ora)
 
-    ![Picture1](./images/Picture4.png)
+    ![Picture__4](./images/picture_4.png)
 
     Next click on the Security tab and choose Encryption Method to be 1-SSL in the Encryption section. Also supply the path and name of the wallet to be used. Data Direct prefers the ewallet.p12 wallet file. The path should be <*wallet_directory*>\ewallet.p12. Supply this information for both the Trust Store as well as the Key Store sections. The password to be supplied here is *the KeyStore/TrustStore password*. You may optionally supply the Database username in the Authentication section.
 
-    ![Picture1](./images/Picture5.png)
+    ![Picture_5](./images/picture_5.png)
 
 
 
     Test your connection by pressing the Test Connect button. Supply the database username and password to test the connection
 
-    ![Picture1](./images/Picture6.png)
+    ![Picture_6](./images/picture_6.png)
 
 
 
-    ![Picture1](./images/Picture7.png)
+    ![Picture_7](./images/picture_7.png)
 
 
 
@@ -61,7 +61,7 @@ Please check the analytic tool documentation in case they have specific connecti
 
 
 
-    ![Picture1](./images/Picture8.png)
+    ![Picture_8](./images/picture_8.png)
 
 
     Note: These instructions are for reference purposes only. As versions of this driver changes, there may be different configuration methods. Please refer to the vendor website for latest details. Please refer to the vendor documentation on all the configuration options that are available for you to set.
