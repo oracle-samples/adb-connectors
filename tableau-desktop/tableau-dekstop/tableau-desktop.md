@@ -2,6 +2,8 @@
 
 This guide shows you how to configure Tableau Desktop/Server connectivity to Oracle Autonomous Database (ADB).
 
+This guide shows you how to configure Tableau Desktop connectivity to Oracle Autonomous Database (ADB).  It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
 These instructions use Oracle Instant Client from Oracle.
 
 ## **Prerequisites**
