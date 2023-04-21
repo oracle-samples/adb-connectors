@@ -1,4 +1,4 @@
-## Connect with one way TLS without a Wallet
+## Connect with one-way TLS without a Wallet
 
 You can connect your application to ADB without the wallet (mTLS) using one way TLS.  There is no need to download the ADB wallet for TLS network access.  You can connect your application securely from a public connection by setting ACLs or connect privately inside the VCN where your application is deployed by configuring a private endpoint.  Both are configured during the ADB provisioning but you can also change and update the network access after provisioning.
 
