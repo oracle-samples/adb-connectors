@@ -41,6 +41,9 @@ Below is an example of connecting Alteryx Designer with ADB after the prerequisi
   ![workflow](./images/workflow.png)
 
 
+## **Bulk Load Performance Improvement**
+
+The Alteryx data bulk load feature to Oracle database has not been optimized and currently has significant performance issues.  See the blog for the implementation that improves bulk load performance.  [Blog](http://dba-blogs.blogspot.com/2023/03/etl-tool-to-bulk-load-using-autorest.html).
 
 ## **Acknowledgements**
 
