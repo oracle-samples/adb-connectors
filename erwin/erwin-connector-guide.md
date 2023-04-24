@@ -1,5 +1,7 @@
 **Introduction**
 
+This guide shows you how to configure Erwin connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
 This step by step tutorial guides how to configure Erwin Data Modeler connectivity to Oracle Autonomous Database (ADB).
 
 ![Picture1](./images/erwin_pic1.png =500x500)
@@ -28,7 +30,7 @@ This document assumes the following:
 5. The following instructions assume you are using 62-bit. If you are using 32-bit, the instructions are the same, except to download the 32-bit Erwin Data Modeler.
 
 6. Download Oracle Client 19.3 of this Oracle.com web page:
-  [https://www.oracle.com/database/technologies/oracle19c-windows-downloads.html](https://www.oracle.com/database/technologies/oracle19c-windows-downloads.html)
+    [https://www.oracle.com/database/technologies/oracle19c-windows-downloads.html](https://www.oracle.com/database/technologies/oracle19c-windows-downloads.html)
     ![Picture7](./images/erwin_pic7.png =500x500)
 
 7. Install the Client.

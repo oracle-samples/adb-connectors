@@ -2,6 +2,8 @@
 
   ![pbi-get-data](./images/certification-matrix.png)
 
+This guide shows you how to configure Looker connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
 This step by step guide shows you how to configure looker connectivity to Oracle Autonomous Database (ADB).
 
 These instructions  work for both dedicated and shared infrastructure ADB.
@@ -77,7 +79,7 @@ substituted wherever the sys user is referenced.
     see [here](https://docs.looker.com/video-library/data-modeling).
 
 ​    and refer to our full set of online documentation at
-    see [here](https://docs.looker.com).
+​    see [here](https://docs.looker.com).
 
 ## **Acknowledgements**
 * **Author(s)** - Pedro Torres, Alex, Keh, Database Product Management

@@ -29,7 +29,7 @@ Erick Carlson
 
 #### Introduction
 
-This guide will demonstrate the steps necessary to connect SAP BusinessObjects (SAP BO) to an Oracle Autonomous Data Warehouse (ADW) for reporting. The primary focus is to validate the ability to use Oracle Wallet, required by ADW, to make a secure connection to an Oracle Database. This guide illustrations how to create a simple SAP BO Universe relying on the Oracle Call Interface (OCI), not to be confused with Oracle Cloud Infrastructure (OCI), as the driver for the connection. This document is by no means is the only way to achieve connectivity to ADW from SAP BO, it is just one example.
+This guide shows you how to configure SAP Business Objects connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).  The primary focus is to validate the ability to use Oracle Wallet, required by ADW, to make a secure connection to an Oracle Database. This guide illustrations how to create a simple SAP BO Universe relying on the Oracle Call Interface (OCI), not to be confused with Oracle Cloud Infrastructure (OCI), as the driver for the connection. This document is by no means is the only way to achieve connectivity to ADW from SAP BO, it is just one example.
 
 This walkthrough is not intended to be a detailed SAP BO reporting guide. The reporting examples simply demonstrate how to create very basic reports utilizing Crystal Reports and Web Intelligence.
 

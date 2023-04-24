@@ -2,6 +2,8 @@
 
 Author: Jan Richter / www.jr-database-tools.de **Validation Matrix Version**
 
+This guide shows you how to configure Pl/SQL Workbench connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
 ![PL-SQL-pic1](/Users/kirkgustafson/Documents/GitHub/adb-connectors-1/PL-SQL-Workbench/images/PL-SQL-pic1.png)
 
 ### **Configuration Steps**
