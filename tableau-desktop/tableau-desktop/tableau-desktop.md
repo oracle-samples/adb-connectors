@@ -57,17 +57,17 @@ Corporation,L=Redwood City,ST=California,C=US")) )
 3. Open Tableau and Choose Oracle as a data source under the ‘To a
    Server’ section.
 
-![tableau](./images/tableau-connect-menu.png)
+![tableau](../images/tableau-connect-menu.png)
 
 
 
 4. In the connection screen for Oracle, use the service name from the tnsnames.ora in the Server field. The Service and Port are not required because it is described already from service name.  Select Use a username and password and provide the database username and the password and click Sign In.  SSL box is not checked.
 
-![connection](./images/oracle-connect-screen.png)
+![connection](../images/oracle-connect-screen.png)
 
 You are now ready to analyze/visualize.
 
-![visualize](./images/tableau-visualize.png)
+![visualize](../images/tableau-visualize.png)
 
 
 
