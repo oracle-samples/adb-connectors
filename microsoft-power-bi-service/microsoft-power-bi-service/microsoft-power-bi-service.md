@@ -2,14 +2,12 @@
 
 This step-by-step tutorial guides configuring Microsoft Power BI service connectivity to Oracle Autonomous Database (ADB) and on-premises databases. Microsoft Power BI service runs in the Microsoft 365 cloud.
 
-Power BI service uses on-premises data gateway, also known as Power BI gateway, to connect the Power
-BI service to Oracle databases. The gateway is hosted on Windows that can either be on-premises or in a
-cloud virtual machine, such as in Oracle Cloud Infrastructure or Azure.
+Power BI service uses on-premises data gateway, also known as Power BI gateway, to connect the Power BI service to Oracle databases. The gateway is hosted on Windows that can either be on-premises or in a cloud virtual machine, such as in Oracle Cloud Infrastructure or Azure.
 
-These instructions use 64-bit unmanaged Oracle Data Provider for .NET (ODP.NET) for data access, as
-required by Power BI service and on-premises gateway. They work for on-premises database and both
-dedicated and shared infrastructure ADB. The instructions for on-premises databases setup also apply to
+These instructions use 64-bit unmanaged Oracle Data Provider for .NET (ODP.NET) for data access, as required by Power BI service and on-premises gateway. They work for on-premises database and both dedicated and shared infrastructure ADB. The instructions for on-premises databases setup also apply to
 Oracle Database Cloud Services and Oracle Exadata Cloud Service.
+
+This guide shows you how to configure Microsoft Power BI Service connectivity to Oracle Autonomous Database (ADB).  It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
 
 ## **Overview**
 

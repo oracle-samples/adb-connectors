@@ -2,11 +2,9 @@
 
 This step-by-step tutorial guides how to configure `Microsoft Power BI Desktop` connectivity to `Oracle Autonomous Database` (ADB) and on-premises databases.
 
-These instructions use unmanaged Oracle Data Provider for .NET (ODP.NET) for data access as required by
-Power BI Desktop. They work for on-premises database and both dedicated and shared infrastructure
-ADB. The instructions for on-premises databases setup also apply to Oracle Database Cloud Services and
-Oracle Exadata Cloud Service.
+These instructions use unmanaged Oracle Data Provider for .NET (ODP.NET) for data access as required by Power BI Desktop. They work for on-premises database and both dedicated and shared infrastructure ADB. The instructions for on-premises databases setup also apply to Oracle Database Cloud Services and Oracle Exadata Cloud Service.
 
+This guide shows you how to configure Microsoft Power BI Desktop connectivity to Oracle Autonomous Database (ADB).  It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
 ## **Prerequisites**
 
 - This document assumes that ADB, such as `Autonomous Data Warehouse (ADW)` or `Autonomous Transaction Processing (ATP)`, or `Autonomous JSON Database (AJD)` is provisioned and Power BI Desktop is installed on a `Windows machine (local, in Azure, or OCI)`.  To provision ADB, see [here](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/autonomous-provision.html#GUID-0B230036-0A05-4CA3-AF9D-97A255AE0C08).

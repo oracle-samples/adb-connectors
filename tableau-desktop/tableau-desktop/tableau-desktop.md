@@ -1,8 +1,16 @@
 ## **Connecting Tableau to Oracle Autonomous Database**
 
+
+This guide shows you how to configure Tableau Desktop/Server connectivity to Oracle Autonomous Database (ADB). These instructions use Oracle Instant Client from Oracle.
+
+This guide shows you how to configure Tableau Desktop connectivity to Oracle Autonomous Database (ADB).  It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
+
+=======
 This guide shows you how to configure Tableau Desktop/Server connectivity to Oracle Autonomous Database (ADB).
 
 These instructions use Oracle Instant Client from Oracle.
+
 
 ## **Prerequisites**
 
@@ -26,6 +34,32 @@ Before Tableau can use the Oracle Client, the system environment variable, `TNS_
    up a CMD prompt and issue the following command `echo %TNS_ADMIN%`. The example
    output of the command should produce a valid directory pathway to the
    `TNS_ADMIN` directory where tnsnames.ora is located.
+
+
+```
+C:\Users> echo %TNS_ADMIN%
+C:\app\client\product\19.3.0\client_1\network\admin
+```
+
+2. Open the tnsames.ora file in the ...\network\admin directory and locate the service name you want to use for your ADB service.  Here is an example of the tnsnames.ora entries from the unzipped ADB wallet.
+
+```
+ADWCDemo_high = (description= (address=(protocol=tcps)(port=1522)(host=adwc.uscomeast1.oraclecloud.com))(connect_data=(service_name=yk2ddvkx2pyiekt_virtualitydemo_high.a
+dwc.oraclecloud.com))(security=(ssl_server_cert_dn=
+"CN=adwc.uscom-east-1.oraclecloud.com,OU=Oracle BMCS US,O=Oracle
+Corporation,L=Redwood City,ST=California,C=US")) )
+
+ADWCDemo_low = (description= (address=(protocol=tcps)(port=1522)(host=adwc.uscomeast1.oraclecloud.com))(connect_data=(service_name=yk2ddvkx2pyiekt_virtualitydemo_low.ad
+wc.oraclecloud.com))(security=(ssl_server_cert_dn=
+"CN=adwc.uscom-east-1.oraclecloud.com,OU=Oracle BMCS US,O=Oracle
+Corporation,L=Redwood City,ST=California,C=US")) )
+
+ADWCDemo_medium = (description=
+(address=(protocol=tcps)(port=1522)(host=adwc.uscom-east1.oraclecloud.com))(connect_data=(service_name=yk2ddvkx2pyiekt_virtualitydemo_mediu
+m.adwc.oraclecloud.com))(security=(ssl_server_cert_dn=
+"CN=adwc.uscom-east-1.oraclecloud.com,OU=Oracle BMCS US,O=Oracle
+Corporation,L=Redwood City,ST=California,C=US")) )
+```
 
     ```
     C:\Users> echo %TNS_ADMIN%
@@ -55,11 +89,21 @@ Before Tableau can use the Oracle Client, the system environment variable, `TNS_
 3. Open Tableau and Choose Oracle as a data source under the ‘To a
    Server’ section.
 
+
+![tableau](../images/tableau-connect-menu.png)
+
    ![tableau](./images/tableau-connect-menu.png)
 
 
 
+
 4. In the connection screen for Oracle, use the service name from the tnsnames.ora in the Server field. The Service and Port are not required because it is described already from service name.  Select Use a username and password and provide the database username and the password and click Sign In.  SSL box is not checked.
+
+![connection](../images/oracle-connect-screen.png)
+
+You are now ready to analyze/visualize.
+
+![visualize](../images/tableau-visualize.png)
 
   ![connection](./images/oracle-connect-screen.png)
 

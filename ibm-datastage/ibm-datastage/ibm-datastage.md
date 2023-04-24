@@ -7,6 +7,8 @@ This document describes how to generally setup and configure Data Direct ODBC dr
 DataStage. Please check the analytic tool documentation in case they have specific
 connectivity interfaces.
 
+This guide shows you how to configure IBM Datastage connectivity to Oracle Autonomous Database (ADB).  It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
 ### About Product/Technology
 
 Oracle Autonomous Data Warehouse (ADW) supports [connections](https://docs.progress.com/category/datadirect-oracle) from standard drivers
