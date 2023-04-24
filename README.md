@@ -1,10 +1,10 @@
 # ADB Connector Documentation
 
-This repository contained the list of documents explaining the step by step setting to establish connection with various partner applications with Autonomus database.
+This repository contains a list of documents explaining the step by step instructions on how to connect various BI, ETL or ISV applications to Oracle Autonomous Database.
 
 ## Installation
 
-This repository contain "How to instructions" and not any specific installable files.  Where ever Oracle client drivers,or third party drivers and components are needed for connecting with Autonomus databases, pointers to appropriated vendor documentation is included.
+This repository contains "How to instructions" and not any specific installable files.  Whereever Oracle client drivers, or third party drivers, and components are needed for connecting with Oracle Autonomous Database, pointers to appropriated vendor documentation is included.
 
 ## Documentation
 
@@ -13,7 +13,7 @@ Where ever necessary multiple document based on Operating system, Cloud platfrom
 
 ## Help
 
-For any suggestion and comment mail us at miltonwan_directs_ww_grp@oracle.com.
+If your application is not listed, please see the other guides as an example. If you would like to validate your application with Oracle Autonomous Database and have it documented, or have any suggestions or comments, please mail us at miltonwan_directs_ww_grp@oracle.com.
 
 ## Contributing
 

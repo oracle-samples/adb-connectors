@@ -1,0 +1,21 @@
+{
+  "workshoptitle": "Creating a connection from DataVirtuality Pipe to Oracle Autonomous Data Warehouse (ADW)",
+  "help": "miltonwan_directs_ww_grp@oracle.com",
+  "tutorials": [
+    {
+      "title": "Connection Guide",
+      "description": "Connection Guide",
+      "filename": "../../datavirtuality-pipes.md"
+    },
+    {
+      "title": "Connecting with Java Thin Client",
+      "description": "Java Thin Client",
+      "filename": "../../../common/jdbc/jdbc-thin.md"
+    },
+    {
+      "title": "Connecting with Wallet",
+      "description": "Wallet",
+      "filename": "../../../common/wallet/wallet.md"
+    }
+  ]
+}

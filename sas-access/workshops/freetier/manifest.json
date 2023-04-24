@@ -1,0 +1,31 @@
+{
+  "workshoptitle": "Connecting SAS Access to Oracle Autonomous Database",
+  "help": "miltonwan_directs_ww_grp@oracle.com",
+  "tutorials": [
+    {
+      "title": "SAS ACCESS Connection Guide",
+      "description": "Introduction",
+      "filename": "../../sas-access-connector-guide.md"
+    },
+    {
+      "title": "Connecting with Wallet",
+      "description": "Connecting with Wallet",
+      "filename": "../../../common/wallet/wallet.md"
+    },
+    {
+      "title": "Connecting without Wallet",
+      "description": "Connecting without Wallet",
+      "filename": "../../../common/tls-no-wallet/no-wallet.md"
+    },
+    {
+      "title": "Oracle Instant Client for Windows Configuration",
+      "description": "Instant Client Configuration",
+      "filename": "../../../common/instant-client/instant-client-windows-64.md"
+    },
+    {
+      "title": "Oracle Instant Client for Linux Configuration",
+      "description": "Instant Client Configuration",
+      "filename": "../../../common/instant-client/instant-client-linux-64.md"
+    }
+  ]
+}

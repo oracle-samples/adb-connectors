@@ -1,9 +1,15 @@
-## **Download and Configure the Wallet**
+## Secure Access from Everywhere to ADB using Wallet
+
+A client can access ADB from everywhere using the wallet.  The wallet contains certificates to securely authenticate to ADB.
+
+![adb-wallet](./images/wallet-diagram1.png)
+
+
+### Download and Configure the Wallet
 
 After provisioning Oracle Autonomous Database (ADB), a wallet containing client credentials is required to connect to ADB. 
 
 ![adb](./images/adb-ui-details.png)
-
 
 
 1. Download the wallet to the client machine running your BI or ETL tool.   Select Instance Wallet for the Wallet Type and click Download Wallet.

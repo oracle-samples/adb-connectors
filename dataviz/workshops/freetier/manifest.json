@@ -1,0 +1,26 @@
+{
+  "workshoptitle": "Connecting SaCa DataViz to Oracle Autonomous Database",
+  "help": "miltonwan_directs_ww_grp@oracle.com",
+  "tutorials": [
+    {
+      "title": "SaCa DataViz Connection Guide",
+      "description": "Introduction",
+      "filename": "../../dataviz-connector-guide.md"
+    },
+    {
+      "title": "Connecting with Wallet",
+      "description": "Wallet",
+      "filename": "../../../common/wallet/wallet.md"
+    },
+    {
+      "title": "Connecting without Wallet",
+      "description": "Introduction",
+      "filename": "../../../common/tls-no-wallet/no-wallet.md"
+    },
+    {
+      "title": "Oracle Instant Client for Windows Configuration",
+      "description": "Instant Client Configuration",
+      "filename": "../../../common/instant-client/instant-client-windows-64.md"
+    }
+  ]
+}
