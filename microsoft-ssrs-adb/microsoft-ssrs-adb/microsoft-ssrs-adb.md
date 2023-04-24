@@ -3,6 +3,8 @@
 
 This step-by-step tutorial guides how to configure Microsoft SQL Server Reporting Services (SSRS) connectivity to Oracle Autonomous Database (ADB) and on-premises databases. These instructions use managed Oracle Data Provider for .NET (ODP.NET) for data access as required by SSRS. They work for on-premises database and both dedicated and shared infrastructure ADB. The instructions for on-premises databases setup also apply to Oracle Database Cloud Services and Oracle Exadata Cloud Service.
 
+This guide shows you how to configure Microsoft SQL Server Reporting Services connectivity to Oracle Autonomous Database (ADB).  It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
 ## Overview
 These are the general steps to setup Oracle database connectivity with SSRS:
 1. Provision Oracle database or ADB
