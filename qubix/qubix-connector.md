@@ -6,6 +6,8 @@
 
 ![Picture2](./images/QUBIXpic2.png)
 
+This guide shows you how to configure Qubix connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
 ### Step 1: Provision ADWC and Download Connection File
 
 1. Provision Autonomous Data Warehouse Cloud (ADWC) and download the [Wallet](../common/wallet/wallet.md). For the Oracle documentation to provision ADWC click [here](http://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/adwc/OBE_Provisioning_Autonomous_Data_Warehouse_Cloud_bak/provisioning_autonomous_data_warehouse_cloud_v2.html). Also check [Downloading Client Credentials (Wallets).](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/user/connect-download-wallet.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1)

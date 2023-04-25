@@ -10,6 +10,8 @@
 
 
 
+This guide shows you how to configure Safe Software connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
 ### **Step 1: Provision Autonomous Database plus Install and Configure Oracle Client**
 
 1. Provision Oracle Autonomous Database, either Autonomous Database Warehouse (ADW) or Autonomous Transaction Processing (ATP), and download the [Wallet](../common/wallet/wallet.md) to the system that will have the FME installation. For the Oracle documentation to provision ADW click [here](https://docs.oracle.com/en/cloud/paas/autonomous-database/index.html). For the Oracle documentation to provision ATP, click [here](https://docs.oracle.com/en/cloud/paas/atp-cloud/create.html). Also check [Downloading Client Credentials (Wallets)](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-download-wallet.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1).

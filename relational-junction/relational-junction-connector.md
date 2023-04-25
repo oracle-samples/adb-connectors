@@ -6,6 +6,8 @@
 
 ![Picture2](./images/RJpic2.png)
 
+This guide shows you how to configure Relational Junction connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
 ### **Step 1: Provisioning the ADWC Instance and Installing and Configuring the Oracle Client**
 
 Provision Autonomous Data Warehouse Cloud (ADWC) and download the [Wallet](../common/wallet/wallet.md), [Oracle instant-client](??? there is t2 and is this even what they should do?), to the system that will have the Relational Junction server installation. To retrieve the Oracle documentation on provisioning ADWC, click here. Also, check out the information on [Downloading Client Credentials (Wallets]()).

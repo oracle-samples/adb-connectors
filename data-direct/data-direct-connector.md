@@ -1,5 +1,7 @@
 **Introduction**
 
+This guide shows you how to configure DataDirect connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
 ADW supports connections from standard drivers including JDBC, ODBC, and ADO.NET. Analytic tools may use 3rd party drivers from providers such as Progress DataDirect. In order to work with ADW, the driver must support Oracle Wallets and SSL encryption. Not all analytic tools package the latest driver versions, so you may be required to update the driver to successfully connect. Progress provides DataDirect drivers for both JDBC and ODBC. The versions supported for ADW are listed.
 
 | **Connector Vendor** | **Version**                               |
@@ -48,7 +50,7 @@ Please check the analytic tool documentation in case they have specific connecti
 
 
     Test your connection by pressing the Test Connect button. Supply the database username and password to test the connection
-
+    
     ![Picture_6](./images/picture_6.png)
 
 
