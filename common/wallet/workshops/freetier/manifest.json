@@ -1,0 +1,11 @@
+{
+  "workshoptitle": "Connection with Wallet to Oracle Autonomous Database",
+  "help": "miltonwan_directs_ww_grp@oracle.com",
+  "tutorials": [
+        {
+      "title": "Connecting with Wallet",
+      "description": "Introduction",
+      "filename": "../../wallet.md"
+    }
+  ]
+}
