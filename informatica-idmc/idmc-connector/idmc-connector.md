@@ -1,6 +1,6 @@
 **Introduction**
 
-This guide shows you how to configure Alteryx connectivity to Oracle Autonomous Database (ADB).  It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+This guide shows you how to configure Informatica Data Management Cloud connectivity to Oracle Autonomous Database (ADB).  It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
 
 This document provides an overview of the configuration steps to create a connection in IDMC to Oracle Autonomous Database (OADB) as target endpoint.
 

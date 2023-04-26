@@ -4,11 +4,11 @@ Author: Jan Richter / www.jr-database-tools.de **Validation Matrix Version**
 
 This guide shows you how to configure Pl/SQL Workbench connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
 
-![PL-SQL-pic1](/Users/kirkgustafson/Documents/GitHub/adb-connectors-1/PL-SQL-Workbench/images/PL-SQL-pic1.png)
+![PL-SQL-pic1](./images/plsql_pic1.png)
 
 ### **Configuration Steps**
 
-![PL-SQL-pic2](/Users/kirkgustafson/Documents/GitHub/adb-connectors-1/PL-SQL-Workbench/images/PL-SQL-pic2.png)
+![PL-SQL-pic2](./images/plsql_pic2.png)
 
 
 
@@ -24,22 +24,22 @@ This guide shows you how to configure Pl/SQL Workbench connectivity to Oracle Au
 
    For example:
 
-![PL-SQL-pic3](/Users/kirkgustafson/Documents/GitHub/adb-connectors-1/PL-SQL-Workbench/images/PL-SQL-pic3.png)
+   ![PL-SQL-pic3](./images/plsql_pic3.png)
 
-5. Optional : Create the TNS_ADMIN environment variable and set it to the location of the secure folder containing the credentials file you saved in Step 3. The tnsnames.ora file provided with the credentials zip file contains three database service names identifiable as high, medium and low. The predefined service names provide different levels of Autonomous Data Warehouse Cloud. Use one of these servcie names in your ConnectString. 
+5. Optional : Create the TNS_ADMIN environment variable and set it to the location of the secure folder containing the credentials file you saved in Step 3. The tnsnames.ora file provided with the credentials zip file contains three database service names identifiable as high, medium and low. The predefined service names provide different levels of Autonomous Data Warehouse Cloud. Use one of these servcie names in your ConnectString.
 6. Optional : Test the Oracle Client with Oracle SQL*Plus
 
-```
-sqlplus password/\"Password\"@ConnectString
-```
+    ```
+    sqlplus password/\"Password\"@ConnectString
+    ```
 
-or
+    or
 
-```
-sqlplus /nolog
-sql> set define off
-sql> connect username/password@connectString
-```
+    ```
+    sqlplus /nolog
+    sql> set define off
+    sql> connect username/password@connectString
+    ```
 
 If the connection is successful you are ready to move to the next step.
 
@@ -58,9 +58,9 @@ Prerequisites:
 
 1. Start the Eclipse IDE.
 
-2. Open the PL/SQL Workbench Perspective press on ![PL-SQL-pic7](/Users/kirkgustafson/Documents/GitHub/adb-connectors-1/PL-SQL-Workbench/images/PL-SQL-pic7.png)  the global toolbar. 
+2. Open the PL/SQL Workbench Perspective press on ![PL-SQL-pic7](./images/plsql_pic7.png)  the global toolbar.
 
-3. Press ![PL-SQL-pic8](/Users/kirkgustafson/Documents/GitHub/adb-connectors-1/PL-SQL-Workbench/images/PL-SQL-pic8.png)in PL/SQL Navigator View to open the Connection Dialog.
+3. Press ![PL-SQL-pic8](./images/plsql_pic8.png)in PL/SQL Navigator View to open the Connection Dialog.
 
 4. Edit the Connection Settings
 
@@ -69,13 +69,14 @@ Prerequisites:
    - Insert the connection settings like using a JDBC connection
       e.g. : jdbc:oracle:thin:@rtool_high?TNS_ADMIN=<wallet-dir>
 
-![PL-SQL-pic4](/Users/kirkgustafson/Documents/GitHub/adb-connectors-1/PL-SQL-Workbench/images/PL-SQL-pic4.png)
+      ![PL-SQL-pic4](./images/plsql_pic4.png)
 
 #### Step 3. Using the Connection
 
-- Press ![PL-SQL-pic9](/Users/kirkgustafson/Documents/GitHub/adb-connectors-1/PL-SQL-Workbench/images/PL-SQL-pic9.png) in PL/SQL Navigator View to add a Script Folder with packages, functions, procedures and/or triggers.
-- Press ![PL-SQL-pic10](/Users/kirkgustafson/Documents/GitHub/adb-connectors-1/PL-SQL-Workbench/images/PL-SQL-pic10.png) to add new PL/SQL Connectors
+- Press ![PL-SQL-pic9](./images/plsql_pic9.png) in PL/SQL Navigator View to add a Script Folder with packages, functions, procedures and/or triggers.
+- Press ![PL-SQL-pic10](./images/plsql_pic10.png) to add new PL/SQL Connectors
 
-![PL-SQL-pic5](/Users/kirkgustafson/Documents/GitHub/adb-connectors-1/PL-SQL-Workbench/images/PL-SQL-pic5.png)
+    ![PL-SQL-pic5](./images/plsql_pic5.png)
 
-- More Information : www.jr-database-tools.de
+
+More Information : www.jr-database-tools.de
