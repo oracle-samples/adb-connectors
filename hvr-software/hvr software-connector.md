@@ -1,6 +1,11 @@
 ## Creating a connection from HVR to Oracle Autonomous Data Warehouse Cloud
 
-###### 																							<img src="./images/HVRpic1.png" alt="Picture1" style="zoom: 33%;" />
+
+| **Certification Matrix** | **Version**                               |
+| -------------------- | ----------------------------------------- |
+| HVR  | 5.6                  |
+| OCI Driver  | Oracle Client Version 18.0.0.0 & higher |
+
 
 This document provides an overview of the steps required to configure HVR to connect to the Oracle Autonomous Data Warehouse (ADWC). It  shows you how to configure HVR Software connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
 
@@ -10,7 +15,9 @@ For optimum performance integrating changes into the Oracle ADWC, HVR recommends
 
 ![Picture2](./images/HVRpic2.png)
 
-###### Step 1: Provision ADWC plus Install and Configure the Oracle Client
+
+
+### Step 1: Provision ADWC plus Install and Configure the Oracle Client
 
 1. Provision the Oracle Autonomous Data Warehouse Cloud (ADWC) and [download](../common/wallet/wallet.md) the Wallet to the system that will have the HVR target agent installation. For the Oracle documentation to provision ADWC click [here](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/adwc/OBE_Provisioning_Autonomous_Data_Warehouse_Cloud_bak/provisioning_autonomous_data_warehouse_cloud_v2.html). Also
     check [Downloading Client Credentials (Wallets)](../common/wallet/wallet.md).
@@ -27,43 +34,42 @@ For optimum performance integrating changes into the Oracle ADWC, HVR recommends
 
    containing the client credentials.
 
-<img src="./images/HVRpic3.png" alt="Picture3" style="zoom:33%;" />
+    ![Picture3](./images/HVRpic3.png)
 
 
-
-5. The TNS_ADMIN environment can be set to point to an alternative location for the sqlnet.ora and tnsnames.ora files. Define the variable if you plan to not use $ORACLE_HOME/network/admin. The tnsnames.ora credentials zip file contains three database service names identifiable as high, medium and low. The predefined service names provide different levels of performance and concurrancy for Autonomous Data Warehouse Cloud. Use one of these service names in your connect string.
+5. The TNS\_ADMIN environment can be set to point to an alternative location for the sqlnet.ora and tnsnames.ora files. Define the variable if you plan to not use $ORACLE\_HOME/network/admin. The tnsnames.ora credentials zip file contains three database service names identifiable as high, medium and low. The predefined service names provide different levels of performance and concurrency for Autonomous Data Warehouse Cloud. Use one of these service names in your connect string.
 
 6. Test the Oracle Client with Oracle SQL*Plus:
 
-   ```
-   sqlplus username@<connect string>
-   ```
+     ```
+     sqlplus username@<connect string>
+     ```
 
    <enter password at prompt>
     or
     sqlplus /nolog
     sql> connect username@<connect string> <enter password at prompt>
 
-​		If the connection is successful you are ready to move to the next step.
+    If the connection is successful you are ready to move to the next step.
 
-###### Step 2: Install HVR
+### Step 2: Install HVR
 
 Follow the [installation instructions](https://www.hvr-software.com/docs/installing-and-upgrading-hvr) to install HVR.
 
 Note that the HVR hub must be able to reach out to an agent installation through TCP/IP communication. As needed, open the firewall for the HVR listener port to the machine running the HVR agent. Also make sure the operating system allows the connection to go through.
 
-###### Step 3: Configuring HVR to connect with ADWC
+### Step 3: Configuring HVR to connect with ADWC
 
 Connect the HVR GUI to the hub, connect to the metadata repository, and create a new Location. If the HVR hub resides in the Oracle Cloud then you may choose to connect directly to ADWC. Use the connect string you tested during the first installation step.
 
-![Picture4](./images/HVRpic4.png)
+  ![Picture4](./images/HVRpic4.png)
 
 More commonly users will connect to the ADWC using an agent running on a VM in the Oracle Cloud.
 
-![Picture5](./images/HVRpic5.png)
+  ![Picture5](./images/HVRpic5.png)
 
 You can now set up channels using the location as a target and enjoy the benefits of the Oracle Autonomous Data Warehouse Cloud.
 
 
 
--- Note depending on your HVR version you may, during initialize, have to use the low resource TNS connection, or as an alternative set an Environment action name HVR_SQL_INIT with value “alter session disable parallel dml”.
+-- Note depending on your HVR version you may, during initialize, have to use the low resource TNS connection, or as an alternative set an Environment action name HVR\_SQL\_INIT with value “alter session disable parallel dml”.
