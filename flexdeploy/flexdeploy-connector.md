@@ -1,6 +1,6 @@
 **Introduction**
 
-
+This guide shows you how to configure FlexDeploy connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
 
 ![Picture2](./images/flexdeploy_pic2.png =500x500)
 
@@ -34,5 +34,5 @@ Step 3: Configuring FlexDeploy to connect with ADWC
 ​		c. Set the JDBC URL in the context.xml file to look like this:
 
         i. url="jdbc:oracle:thin:@flexagon_high"
-
+    
         ii. Note *** The name should match an entry in the tnsnames.ora file.

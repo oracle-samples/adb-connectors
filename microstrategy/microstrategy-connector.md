@@ -2,6 +2,8 @@
 
 
 
+This guide shows you how to configure MicroStrategy connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
 In MicroStrategy 2021 Update 3, the Oracle Database Cloud Connector adds a new connection type called Cloud Wallet Connection to better support Oracle Autonomous Data Warehouse (ADW) on Web and Workstation server mode.
 
 MicroStrategy used to have two connection types, the standard connection and the TNS names connection. If use any of them to connect the ADW, user must manually put the wallet files to the I-server machine disk which is inconvenient and insecure. Especially for MCI and MCE environments, the server access is limited.
