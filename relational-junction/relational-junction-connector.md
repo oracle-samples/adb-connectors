@@ -1,9 +1,9 @@
 # **Creating a Connection from Relational Junction to Oracle Autonomous Data Warehouse (ADW)**
 
 
-![Picture1](./images/RJpic1.png)
+![Picture1](./images/rj_pic1.png)
 
-![Picture2](./images/RJpic2.png)
+![Picture2](./images/rj_pic2.png)
 
 This guide shows you how to configure Relational Junction connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
 
@@ -19,127 +19,125 @@ For pre-existing Relational Junction installations, jump to Step 3, which detail
 
 If this is a new installation, use the following steps:
 
-1) Purchase Relational Junction:
-    a) from the Sesame Software website https://sesamesoftware.com/request-a-demo/
+1. Purchase Relational Junction:
 
-​		b) or on the Oracle Cloud Marketplace
+  a. from the Sesame Software website https://sesamesoftware.com/request-a-demo/
 
-​			https://cloudmarketplace.oracle.com/marketplace/en_US/listing/53395658
+  b. or on the Oracle Cloud Marketplace  https://cloudmarketplace.oracle.com/marketplace/en_US/listing/53395658
 
-​		c) or on the Oracle Cloud Marketplace BYOL Listing
+  c. or on the Oracle Cloud Marketplace BYOL Listing https://cloudmarketplace.oracle.com/marketplace/en_US/listing/65298773
 
-​			https://cloudmarketplace.oracle.com/marketplace/en_US/listing/65298773
+2. Register the product with our company.
 
-2) Registertheproductwithourcompany.
-3) Contact our Support department at support@sesamesoftware.com  for installation and setup assistance that you may require.
+3. Contact our Support department at support@sesamesoftware.com  for installation and setup assistance that you may require.
 
 
 
 ### **Step 3: Configuring Relational Junction’s Datasource** **to Connect with ADWC**
 
-![Picture3](./images/RJpic3.png)
+![Picture3](./images/rj_pic3.png)
 
-1) After installation,configure the product to connect to the ADW data source and your selected target. Start by clicking on the Datasources tab. Then click on New Datasource to bring up the Add New Datasource popup screen.
+1. After installation,configure the product to connect to the ADW data source and your selected target. Start by clicking on the Datasources tab. Then click on New Datasource to bring up the Add New Datasource popup screen.
 
-![Picture4](./images/RJpic4.png)
+    ![Picture4](./images/rj_pic4.png)
 
 2. Give the data source a meaningful label to help you identify it.
 3. Choose the JDBC Driver Junction option from the drop down menu.
 4. Save the new datasource.
 
-![Picture5](./images/RJpic5.png)
+    ![Picture5](./images/rj_pic5.png)
 
 5. When the configuration page opens, choose the Oracle ADW option from the drop down menu.
 6. Then click on the Save button.
 
-![Picture6](./images/RJpic6.png)
+    ![Picture6](./images/rj_pic6.png)
 
 7. After choosing the Oracle ADW template, enter the required credentials for ADW instance:
 
-​		a) Enter the ADW Username that will be used. 
+    ​		a) Enter the ADW Username that will be used.
 
-​		b) Enter the ADW Password that will be used.
+    ​		b) Enter the ADW Password that will be used.
 
-​        c) Enter the name of the schema thatis going to be used for this data source. 
+    ​   c) Enter the name of the schema that is going to be used for this data source.
 
-​		d) Enter the DB Service Name being used.
+    ​		d) Enter the DB Service Name being used.
 
-![Picture7](./images/RJpic7.png)
+      ![Picture7](./images/rj_pic7.png)
 
-8) Choose one of the following Temporary Storage Locations (a or b): 
+8. Choose one of the following Temporary Storage Locations (a or b):
 
-​		a) Local file system storage 
+    ​		a) Local file system storage
 
-​				i) If you are using local filesystem storage, go directly to step 9. 
+      If you are using local filesystem storage, go directly to step 9.
 
-​		b) Object Storage 
+    ​		b) Object Storage
 
-​				i) Add credentials: 
+    ​		Add credentials:
 
-​						(1) Enter the User OCID (Oracle Cloud Id), e.g., ocid1.user.oc1..aaaaaaaas______o3r 
+    ​						(1) Enter the User OCID (Oracle Cloud Id), e.g., ocid1.user.oc1..aaaaaaaas______o3r
 
-​						(2)  Paste in the Private Key that was generated on your system to allow you to get the 							   authtoken. 
+    ​						(2)  Paste in the Private Key that was generated on your system to allow you to get the authtoken.
 
-​						(3)  Tenancy - Paste or enter your OCID, e.g., ocid1.tenancy.oc1..aaaaaaaab______dsq 
+    ​						(3)  Tenancy - Paste or enter your OCID, e.g., ocid1.tenancy.oc1..aaaaaaaab______dsq
 
-​						(4)  Region - This is the physical location where the instance resides, e.g., “Phoenix” or “Ashburn” 
+    ​						(4)  Region - This is the physical location where the instance resides, e.g., “Phoenix” or “Ashburn”
 
-​						(5)  Passphrase - If securing the Private Key with a Passphrase, enter it here 
+    ​						(5)  Passphrase - If securing the Private Key with a Passphrase, enter it here
 
-​						(6)  Fingerprint - Verifies the Private Key that you entered, e.g., 20:3b:97:13:55:1c:5b:0d:d3:37:d8:50:4e:c5:3a:34 
+    ​						(6)  Fingerprint - Verifies the Private Key that you entered, e.g., 20:3b:97:13:55:1c:5b:0d:d3:37:d8:50:4e:c5:3a:34
 
-​						(7)  Compartment - Paste or enter your OCID, e.g., ocid1.compartment.oc1..aaaaaaaas______o3r 
+    ​						(7)  Compartment - Paste or enter your OCID, e.g., ocid1.compartment.oc1..aaaaaaaas______o3r
 
-​						(8)  Authtoken - Encoded string for 2 factor authentication 
+    ​						(8)  Authtoken - Encoded string for 2 factor authentication
 
-​						(9)  OCI Username - Oracle Cloud Username
+    ​						(9)  OCI Username - Oracle Cloud Username
 
-​						(10) Continue to step 9. 
+    ​						(10) Continue to step 9.
 
-![Picture8](./images/RJpic8.png)
+    ![Picture8](./images/rj_pic8.png)
 
-9) ClickonFileWizard.
+9. Click on File Wizard.
 
-![Picture9](./images/RJpic9.png)
+    ![Picture9](./images/rj_pic9.png)
 
-10) Click on the Choose File button to bring up the screen to pick a file.
+10. Click on the Choose File button to bring up the screen to pick a file.
 
-![Picture9](./images/RJpic9.png)
+    ![Picture9](./images/rj_pic9.png)
 
-![Picture10](./images/RJpic10.png)
+    ![Picture10](./images/rj_pic10.png)
 
-​			a) ChoosetheWalletfilethatyouwillbeusing,e.g.,Wallet_Demo_ADW.zip
+​		a) Choose the Wallet file that you will be using, e.g., Wallet\_Demo\_ADW.zip
+    ![Picture11](./images/rj_pic11.png)
 
-![Picture11](./images/RJpic11.png)
+11. Click on the Upload button to add the Wallet file you want to use.
 
-11) Click on the Upload button to add the Wallet file you want to use.
+    ![Picture12](./images/rj_pic12.png)
 
-![Picture12](./images/RJpic12.png)
+12. Put the name of the Wallet file in the Wallet Location section.
 
-12) Put the name of the Wallet file in the Wallet Location section.
+  ​		a) e.g., Wallet\_Demo\_ADW
 
-​		a) e.g.,Wallet_Demo_ADW
+  ​		b) If there is a password required for the Wallet, that can also be entered on the next line.
 
-​		b) IfthereisapasswordrequiredfortheWallet,thatcanalsobeenteredon the next line.
+  ![Picture13](./images/rj_pic13.png)
 
-![Picture13](./images/RJpic13.png)
+13. Enter the name of the Date Field, or Fields, that you wish to key the incremental downloads on.
 
-13) Enter the name of the Date Field, or Fields, that you wish to key the incremental downloads on.
+14. Set Schema Prefix to upper.
 
-14) Set Schema Prefix to upper. 
-15) Set Table Name case to upper.
+15. Set Table Name case to upper.
 
-![Picture14](./images/RJpic14.png)
+    ![Picture14](./images/rj_pic14.png)
 
-16) Click Test.
+16. Click Test.
 
-![Picture15](./images/RJpic15.png)
+    ![Picture15](./images/rj_pic15.png)
 
-17) You should see a message that says Connection Test Successful.
+17. You should see a message that says Connection Test Successful.
 
-![Picture16](./images/RJpic16.png)
+    ![Picture16](./images/rj_pic16.png)
 
-18) Click Save And Close.
+18. Click Save And Close.
 
 
 ## **Acknowledgements**

@@ -1,20 +1,18 @@
 ## Creating a connection from HVR to Oracle Autonomous Data Warehouse Cloud
 
 
+This document provides an overview of the steps required to configure HVR to connect to the Oracle Autonomous Data Warehouse (ADWC). It  shows you how to configure HVR Software connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
+HVR supports log-based Change Data Capture (CDC) for heterogeneous data replication from several source database technologies, into a multitude of destination technologies and data formats. HVR 5.6 is the first version certified to deliver data into the Oracle ADWC.
+
 | **Certification Matrix** | **Version**                               |
 | -------------------- | ----------------------------------------- |
 | HVR  | 5.6                  |
 | OCI Driver  | Oracle Client Version 18.0.0.0 & higher |
 
-
-This document provides an overview of the steps required to configure HVR to connect to the Oracle Autonomous Data Warehouse (ADWC). It  shows you how to configure HVR Software connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
-
-HVR supports log-based Change Data Capture (CDC) for heterogeneous data replication from several source database technologies, into a multitude of destination technologies and data formats. HVR 5.6 is the first version certified to deliver data into the Oracle ADWC.
-
 For optimum performance integrating changes into the Oracle ADWC, HVR recommends an architecture that features the use of agents. Agents are installations of the HVR software that are located as close as possible to the source and destination technologies. The use of agents will optimize network communication, and distribute load. HVR features such as initial load, ongoing replication and compare/repair all take advantage of the agents. With the Oracle ADWC as the target, the recommended setup is to include an agent in the Oracle Cloud, in the same availability domain as the ADWC, on a VM, or Bare Metal instance. TCP/IP communication into the Oracle Cloud can be encrypted.
 
-![Picture2](./images/HVRpic2.png)
-
+![Picture2](./images/hvr_pic2.png)
 
 
 ### Step 1: Provision ADWC plus Install and Configure the Oracle Client
@@ -34,7 +32,7 @@ For optimum performance integrating changes into the Oracle ADWC, HVR recommends
 
    containing the client credentials.
 
-    ![Picture3](./images/HVRpic3.png)
+    ![Picture3](./images/hvr_pic3.png)
 
 
 5. The TNS\_ADMIN environment can be set to point to an alternative location for the sqlnet.ora and tnsnames.ora files. Define the variable if you plan to not use $ORACLE\_HOME/network/admin. The tnsnames.ora credentials zip file contains three database service names identifiable as high, medium and low. The predefined service names provide different levels of performance and concurrency for Autonomous Data Warehouse Cloud. Use one of these service names in your connect string.
@@ -62,11 +60,11 @@ Note that the HVR hub must be able to reach out to an agent installation through
 
 Connect the HVR GUI to the hub, connect to the metadata repository, and create a new Location. If the HVR hub resides in the Oracle Cloud then you may choose to connect directly to ADWC. Use the connect string you tested during the first installation step.
 
-  ![Picture4](./images/HVRpic4.png)
+  ![Picture4](./images/hvr_pic4.png)
 
 More commonly users will connect to the ADWC using an agent running on a VM in the Oracle Cloud.
 
-  ![Picture5](./images/HVRpic5.png)
+  ![Picture5](./images/hvr_pic5.png)
 
 You can now set up channels using the location as a target and enjoy the benefits of the Oracle Autonomous Data Warehouse Cloud.
 

@@ -1,5 +1,8 @@
 **Introduction**
 
+This guide shows you how to configure WildFly connectivity to Oracle Autonomous Database (ADB).  It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
+
 WildFly is a free, open-source application server that is widely used for building and deploying enterprise-level Java applications. In this guide, we will walk you through the steps to install the latest version of WildFly on Linux and connect it to the Oracle Autonomous Database. We will also cover the installation and configuration of the JDBC driver, adding the driver, and configuring the datasource manually.
 
 
