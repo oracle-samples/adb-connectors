@@ -1,6 +1,5 @@
 # **Creating a Connection from Relational Junction to Oracle Autonomous Data Warehouse (ADW)**
 
-###### Authors: William Dubberley, Rebecca Wyatt, George Weilenmann, Scott O’Dell
 
 ![Picture1](./images/RJpic1.png)
 
@@ -10,11 +9,11 @@ This guide shows you how to configure Relational Junction connectivity to Oracle
 
 ### **Step 1: Provisioning the ADWC Instance and Installing and Configuring the Oracle Client**
 
-Provision Autonomous Data Warehouse Cloud (ADWC) and download the [Wallet](../common/wallet/wallet.md), [Oracle instant-client](??? there is t2 and is this even what they should do?), to the system that will have the Relational Junction server installation. To retrieve the Oracle documentation on provisioning ADWC, click here. Also, check out the information on [Downloading Client Credentials (Wallets]()).
+Provision Autonomous Data Warehouse Cloud (ADWC) and download the [Wallet](https://oracle-samples.github.io/adb-connectors/common/wallet/workshops/freetier/) to the system that will have the Relational Junction server installation. To retrieve the Oracle documentation on provisioning ADWC, click [here](https://docs.oracle.com/en/cloud/paas/autonomous-database/index.html). Also, check out more information on downloading client credentials or the wallet [here](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/connect-download-wallet.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1).
 
 
 
-### **Step 2. Install** **Relational Junction
+### **Step 2. Install** Relational Junction
 
 For pre-existing Relational Junction installations, jump to Step 3, which details the steps needed to configure ADWC as a target.
 
@@ -141,3 +140,10 @@ If this is a new installation, use the following steps:
 ![Picture16](./images/RJpic16.png)
 
 18) Click Save And Close.
+
+
+## **Acknowledgements**
+
+* **Author(s)** - William Dubberley, Rebecca Wyatt, George Weilenmann, Scott O’Dell
+* **Contributor(s)** - Kirk Gustafson
+* **Last Updated By/Date** - Kirk Gustafson, April 2023
