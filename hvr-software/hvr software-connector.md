@@ -1,7 +1,7 @@
 ## Creating a connection from HVR to Oracle Autonomous Data Warehouse Cloud
 
 
-This document provides an overview of the steps required to configure HVR to connect to the Oracle Autonomous Data Warehouse (ADWC). It  shows you how to configure HVR Software connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+This guide shows you how to configure HVR Software connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
 
 HVR supports log-based Change Data Capture (CDC) for heterogeneous data replication from several source database technologies, into a multitude of destination technologies and data formats. HVR 5.6 is the first version certified to deliver data into the Oracle ADWC.
 
