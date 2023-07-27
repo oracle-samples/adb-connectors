@@ -38,14 +38,15 @@ Install the WANDISCO FUSION and LiveS3 proxy server application software on the 
 Create an External Table with Object Storage Data repository using the DBMS\_CLOUD PL/SQL package. Use the DBMS\_CLOUD package in Oracle Autonomous Data Warehouse to load, query, and save Object Storage data. The PL/SQL package DBMS\_CLOUD provides support for loading data from files in the Cloud to your tables in Autonomous Data Warehouse. This package supports loading from files in the following cloud services: Oracle Cloud Infrastructure Object Storage, Oracle Cloud Infrastructure Object Storage Classic, Azure Blob Storage, and Amazon S3.
 
 The list below shows the DBMS\_CLOUD subprograms provided with Autonomous Data Warehouse:
-  • COPY\_DATA Procedure
-  • CREATE\_CREDENTIAL Procedure
-  • CREATE\_EXTERNAL\_TABLE Procedure
-  • DELETE\_FILE Procedure
-  • DROP\_CREDENTIAL Procedure
-  • LIST\_FILES Function
-  • PUT\_OBJECT Procedure
-  • VALIDATE\_EXTERNAL\_TABLE Procedure
+
+- COPY\_DATA Procedure
+- CREATE\_CREDENTIAL Procedure
+- CREATE\_EXTERNAL\_TABLE Procedure
+- DELETE\_FILE Procedure
+- DROP\_CREDENTIAL Procedure
+- LIST\_FILES Function
+- PUT\_OBJECT Procedure
+- VALIDATE\_EXTERNAL\_TABLE Procedure
 
 ## Step 4: Establish credentials & use it to read & write data
 
@@ -94,4 +95,4 @@ To use object storage as the underly storage for the table, we will use the CREA
 ## **Acknowledgements**
 * **Author(s)** - D
 * **Contributor(s)** -
-* **Last Updated By/Date** - 
+* **Last Updated By/Date** -
