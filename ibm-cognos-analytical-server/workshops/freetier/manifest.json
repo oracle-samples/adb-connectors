@@ -1,0 +1,11 @@
+{
+  "workshoptitle": "Creating a connection from IBM Cognos Analytics Server to Oracle Autonomous Data Warehouse( ADW)",
+  "help": "vijay.balebail@oracle.com",
+  "tutorials": [
+    {
+      "title": "Connection Guide",
+      "description": "Connection Guide",
+      "filename": "../../ibm-cognos-analytical-server.md"
+    }
+  ]
+}
