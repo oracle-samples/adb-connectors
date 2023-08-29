@@ -1,11 +1,11 @@
 {
-  "workshoptitle": "Connecting ........... to Oracle Autonomous Database",
+  "workshoptitle": "Connecting Simba to Oracle Autonomous Database",
   "help": "miltonwan_directs_ww_grp@oracle.com",
   "tutorials": [
     {
-      "title": "Connection Guide",
-      "description": "Connection Guide",
-      "filename": "../../connector-guide.md"
+      "title": "Simba Connection Guide",
+      "description": "Simba Connection Guide",
+      "filename": "../../simba-connector-guide.md"
     },
     {
       "title": "Connecting with Wallet",

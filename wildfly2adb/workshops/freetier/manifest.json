@@ -25,7 +25,7 @@
     {
       "title": "Download & Configure JDBC driver",
       "description": "JDBC Configuration",
-      "filename": "../../../common/jdbc/jdbc-thin.md"
+      "filename": "../../../common/jdbc/jdbc-thin-wallet.md"
     }
   ]
 }
