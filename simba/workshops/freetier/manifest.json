@@ -1,0 +1,26 @@
+{
+  "workshoptitle": "Connecting Simba to Oracle Autonomous Database",
+  "help": "miltonwan_directs_ww_grp@oracle.com",
+  "tutorials": [
+    {
+      "title": "Simba Connection Guide",
+      "description": "Simba Connection Guide",
+      "filename": "../../simba-connector-guide.md"
+    },
+    {
+      "title": "Connecting with Wallet",
+      "description": "Connecting with Wallet",
+      "filename": "../../common/wallet/wallet.md"
+    },
+    {
+      "title": "Connecting without Wallet",
+      "description": "Connecting without Wallet",
+      "filename": "../../common/tls-no-wallet/no-wallet.md"
+    },
+    {
+      "title": "JDBC Configuration",
+      "description": "JDBC Configuration",
+      "filename": "../../common/jdbc/jdbc-thin-wallet.md"
+    }
+  ]
+}
