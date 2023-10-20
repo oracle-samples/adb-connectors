@@ -1,6 +1,6 @@
 **Introduction**
 
-Amazon QuickSight powers data-driven organizations with unified business intelligence (BI) at hyperscale. With QuickSight, all users can meet varying analytic needs from the same source of truth through modern interactive dashboards, paginated reports, embedded analytics, and natural language queries.
+Amazon QuickSight is a business intelligence (BI) service. With QuickSight, all users can meet varying analytic needs from the same source of truth through modern interactive dashboards, paginated reports, embedded analytics, and natural language queries.
 
 QuickSight can connect to various databases within the AWS cloud as well as other clouds services and on premise databases.  
 
@@ -13,9 +13,9 @@ You can read further about [AWS QuickSight endpoints and quotas](https://docs.aw
 
 ### **Prerequisites**
 
-- Required access and credits to provision ADWC instance on Oracle Cloud.
+- Required access and credits to provision ADW instance on Oracle Cloud.
 - Should have account with required credits on AWS QuickSight
-- If ADWC is already configured you have the ADMIN user password and ADB Wallet is downloaded on app server.
+- If ADW is already configured you have the ADMIN user password and ADB Wallet is downloaded on app server.
 
 
 ## **Configure the Connection**
@@ -33,7 +33,7 @@ Note: if you are having a existing QuickSight account, and creating a new ADB in
 
 ## Step 2: Configure TLS connection on ADB instance
 
-Follow the instructions in document  [`Connect with one-way TLS without a Wallet`](?lab=no-wallet).  You need to whitelist the region CIRD block to connect.
+Follow the instructions in document  [`Connect with one-way TLS without a Wallet`](?lab=no-wallet).  You need to whitelist the region CIDR block to connect.
 
 ![Create ACL list on ADB](./images/adding_cidr-block-in-acl-list.jpg)
 
