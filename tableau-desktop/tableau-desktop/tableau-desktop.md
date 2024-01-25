@@ -10,9 +10,11 @@ This document assumes the following:
 - Tableau Desktop/Server is installed on a machine (local, OCI, or other cloud).  
 - Autonomous Database (ADB) is provisioned. ADB includes Autonomous Data Warehouse (ADW) or Autonomous Transaction Processing (ATP), or Autonomous JSON Database (AJD).  To provision ADB, see [here](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/autonomous-provision.html#GUID-0B230036-0A05-4CA3-AF9D-97A255AE0C08).
 - ADB Wallet is downloaded on your machine running Tableau.  To download and configure the wallet see [here](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/cswgs/autonomous-connect-download-credentials.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1).
-- Oracle Instant Client is downloaded and configured.  To install Oracle Instant Client see [here](https://www.oracle.com/database/technologies/instant-client.html).
-- You also need `ojdbc8.jar` and the additional jars: `oraclepki.jar`, `osdt_core.jar`, and `osdt_cert.jar` for use with Oracle wallets, see [here](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html) and download ojdbc8-full.tar.gz.
-  - Extract `ojdbc8.jar`, `oraclepki.jar`, `osdt_core.jar`, and `osdt_cert.jar` to the `Tableau/Drivers` directory and restart Tableau.
+
+- You also need `ojdbc11.jar` and the additional jars: `oraclepki.jar`, `osdt_core.jar`, and `osdt_cert.jar` for use with Oracle wallets, see [here](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html) and download ojdbc8-full.tar.gz.
+
+- The `ojdbc11.jar` file needs to be copied to `~/Library/Tableau/Drivers` (Mac), `C:\Program Files\Tableau\Drivers` (Windows), or `/opt/tableau/tableau_driver/jdbc` (Linux). Instructions can be found on our Driver Download [page:](https://www.tableau.com/support/drivers)  
+- Extract `ojdbc11.jar`, `oraclepki.jar`, `osdt_core.jar`, and `osdt_cert.jar` to the correct directory and restart Tableau.
 
 
 ## **Configuring Tableau with Oracle Client**
