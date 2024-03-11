@@ -1,11 +1,11 @@
 {
-  "workshoptitle": "Connecting Microstrategy to Oracle Autonomous Database",
-  "help": "vijay.balebail@oracle.com",
+  "workshoptitle": "Connecting from Pl/SQL Workbech to Oracle Autonomous Database",
+  "help": "miltonwan_directs_ww_grp@oracle.com",
   "tutorials": [
     {
-      "title": "Microstrategy Connection Guide",
+      "title": "PL/SQL Workbench Connection Guide",
       "description": "Introduction",
-      "filename": "../../microstrategy-connector.md"
+      "filename": "../../plsql-workbench.md"
     }
   ]
 }

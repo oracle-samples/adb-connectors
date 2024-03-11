@@ -1,6 +1,8 @@
 **Introduction**
 
-This guide shows you how to configure connection from BotSupply Insights to  Oracle Autonomous Data Warehouse (ADW).
+This guide shows you how to configure BotSupply connectivity to Oracle Autonomous Database (ADB).  It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
+
 These instructions use JDBC Thin driver from Oracle.
 
 

@@ -1,7 +1,12 @@
 {
   "workshoptitle": "Connecting Qlik to Oracle Autonomous Database",
-  "help": "vijay.balebail@oracle.com",
+  "help": "miltonwan_directs_ww_grp@oracle.com",
   "tutorials": [
+    {
+      "title": "Qlik Connection Guide",
+      "description": "Introduction",
+      "filename": "../../qlik-connector-guide.md"
+    },
     {
       "title": "Connecting with Wallet",
       "description": "Wallet",
@@ -16,11 +21,7 @@
       "title": "Oracle Instant Client for Windows Configuration",
       "description": "Instant Client Configuration",
       "filename": "../../../common/instant-client/instant-client-windows-64.md"
-    },
-    {
-      "title": "Qlik Connection Guide",
-      "description": "Introduction",
-      "filename": "../../qlik-connector-guide.md"
     }
+
   ]
 }

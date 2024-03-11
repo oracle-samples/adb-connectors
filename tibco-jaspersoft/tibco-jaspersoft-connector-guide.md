@@ -1,5 +1,7 @@
 ### **Introduction**
 
+This guide shows you how to configure Tibco Jaspersoft connectivity to Oracle Autonomous Database (ADB).  It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
 This guide shows you how to configure Tibco Jaspersoft connectivity to Oracle Autonomous Database (ADB).
 
 These instructions were documented using Jaspersoft 7.8 and Oracle Client 19.8.

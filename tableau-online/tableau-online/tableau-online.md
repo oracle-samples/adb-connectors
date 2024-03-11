@@ -1,16 +1,16 @@
 ## **Connecting Tableau Online to Oracle Autonomous Database**
 
-This document describes how to setup connectivity between Tableau Online and the Oracle Autonomous Database (ADB). The Tableau Online architecture uses a Tableau Bridge Service and a corresponding Tableau Bridge Client software to connect to ADB.
-
 This guide shows you how to configure Tableau Online connectivity to Oracle Autonomous Database (ADB).  It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
 
-## **Configuring Tableau Online**
+
+This document describes how to setup connectivity between Tableau Online and the Oracle Autonomous Database (ADB). The Tableau Online architecture uses a Tableau Bridge Service and a corresponding Tableau Bridge Client software to connect to ADB.
 
 The figure below shows a high level overview of what you will install and configure to connect Tableau Online to ADB.
 
 ![tableau-online](images/tableau-online-arch.png)
 
-## Pre-requisites
+
+### Pre-requisites
 
 1. Provision Autonomous Database (ADB). ADB includes Autonomous Data Warehouse (ADW) or Autonomous Transaction Processing (ATP), or Autonomous JSON Database (AJD).  To provision ADB, see [here](https://docs.oracle.com/en/cloud/paas/autonomous-database/adbsa/autonomous-provision.html#GUID-0B230036-0A05-4CA3-AF9D-97A255AE0C08).
 2. To connect Tableau Online to ADB, a Tableau bridge software needs to be installed and configured on a 1 OCPU Compute running Windows on OCI.
@@ -95,7 +95,7 @@ The figure below shows a high level overview of what you will install and config
 Congratulations! Once you have published the Data sources and workbooks to Tableau Online you will be able to see the data sources on Tableau Bridge.
 
 ## Similar Connector Documents
-- [Connect Tableau Desktop to ADB](https://oracle-samples.github.io/adb-connectors/tableau-online/workshops/freetier/#SimilarConnectorDocuments)
+- [Connect Tableau Desktop to ADB](https://oracle-samples.github.io/adb-connectors/tableau-desktop/workshops/freetier/#SimilarConnectorDocuments)
 
 
 ## **Acknowledgements**

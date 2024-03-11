@@ -1,5 +1,7 @@
 **Introduction**
 
+This guide shows you how to configure Domo connectivity to Oracle Autonomous Database (ADB). It describes how to connect Oracle Autonomous Database using the wallet or mTLS.  If you want to connect without the wallet click [here](https://oracle-samples.github.io/adb-connectors/common/tls-no-wallet/workshops/freetier/).
+
 Oracle Autonomous Data Warehouse (ADW) supports connections from standard drivers including JDBC, ODBC, and ADO.NET, and clients that use these compliant drivers. In order to work with ADW, the connector/driver must support Oracle Wallets and SSL encryption.
 
 This document describes how to setup and configure Domo to connect to Oracle Autonomous Data Warehouse.
@@ -25,9 +27,9 @@ To connect to Oracle Autonomous Data Warehouse and create a Domo DataSet, you mu
 1. [Download](?lab=wallet) the Wallet from the ADW administration console. Keep the Credential wallet in its original format which is the Zip format.
 2. Extract the certificate authority configuration information from the Credential wallet using **certutil** (Windows) or **base64** (Mac/Linux), as follows (**<wallet.zip>** is the downloaded Credentials wallet zip file):
 
-    ​**Windows: certutil -encode <wallet.zip> encoded_wallet.txt**
+    **Windows: certutil -encode <wallet.zip> encoded_wallet.txt**
 
-    ​**Mac/Linux: base64 -i <wallet.zip> -o encoded_wallet.txt**
+    **Mac/Linux: base64 -i <wallet.zip> -o encoded_wallet.txt**
 
 3. The above step will generate a text file named **encoded_wallet.txt**.
 4. Next, locate the **Credentials** pane in the Oracle Autonomous Data Warehouse Cloud Connector page. This pane contains fields for entering credentials to connect to your Oracle Autonomous Data Warehouse account.

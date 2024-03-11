@@ -1,11 +1,11 @@
 {
-  "workshoptitle": "Connecting Microstrategy to Oracle Autonomous Database",
-  "help": "vijay.balebail@oracle.com",
+  "workshoptitle": "Connecting from Safe Softwre to Oracle Autonomous Database",
+  "help": "miltonwan_directs_ww_grp@oracle.com",
   "tutorials": [
     {
       "title": "Microstrategy Connection Guide",
       "description": "Introduction",
-      "filename": "../../microstrategy-connector.md"
+      "filename": "../../safe_software_fme.md"
     }
   ]
 }

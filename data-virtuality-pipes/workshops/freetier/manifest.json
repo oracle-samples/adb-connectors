@@ -15,7 +15,7 @@
     {
       "title": "Connecting with Wallet",
       "description": "Wallet",
-      "filename": "../../../common/wallet/wallet.md"
+      "filename": "../../../common/wallet/jdbc-thin-wallet"
     }
   ]
 }

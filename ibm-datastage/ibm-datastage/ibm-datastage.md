@@ -11,9 +11,7 @@ This guide shows you how to configure IBM Datastage connectivity to Oracle Auton
 
 ### About Product/Technology
 
-Oracle Autonomous Data Warehouse (ADW) supports [connections](https://docs.progress.com/category/datadirect-oracle) from standard drivers
-including JDBC, ODBC, and ADO.NET. Analytic tools may use 3rd party drivers from
-providers such as Data Direct. In order to work with ADW, the driver must support [Oracle Wallets](https://docs.oracle.com/cd/E92519_02/pt856pbr3/eng/pt/tsvt/concept_UnderstandingOracleWallet.html?pli=ul_d96e224_tsvt#:~:text=Oracle%20Wallet%20is%20a%20container,is%20used%20for%20security%20credentials.) and SSL encryption.
+Oracle Autonomous Data Warehouse (ADW) supports [connections](https://docs.progress.com/category/datadirect-oracle) from standard drivers including JDBC, ODBC, and ADO.NET. Analytic tools may use 3rd party drivers from providers such as Data Direct. In order to work with ADW, the driver must support [Oracle Wallets](https://docs.oracle.com/cd/E92519_02/pt856pbr3/eng/pt/tsvt/concept_UnderstandingOracleWallet.html?pli=ul_d96e224_tsvt#:~:text=Oracle%20Wallet%20is%20a%20container,is%20used%20for%20security%20credentials.) and SSL encryption.
 Not all analytic tools package the latest driver versions, so you may be required to update the driver to the latest [versions](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)  before you can successfully connect
 
 ### Objectives
@@ -47,11 +45,11 @@ In this lab, you will:
 
 3. Download the DataDirect ODBC Drivers. Once unzipped and installed, open the 32-bit ODBC Administrator on Windows to configure the system DSN.
 
-![images](images/step3.png)
+    ![images](images/step3.png)
 
 4. Click on Add to configure a new system DSN under the System DSN tab. Locate the DataDirect 8.0 Oracle Wire Protocol from the list of drivers presented to you and press `Finish`.
 
-![images](images/step4.png)
+    ![images](images/step4.png)
 
 5. You will then be presented with a form for the DSN attributes. Fill in the DSN name, your TNS service name (this can be found in the tnsnames.ora file in TNS_ADMIN location) and complete path to the tnsnames.ora  `(<wallet_directory>\tnsnames.ora)`
 
@@ -64,11 +62,11 @@ In this lab, you will:
 7. Test your connection by pressing the `Test Connect` button. Supply the database
 username and password to test the connection
 
-  ![image](images/step7.png)
+    ![image](images/step7.png)
 
 8. You should get a Connection Established message.
 
-![image](images/step8.png)
+    ![image](images/step8.png)
 
 
 9. You are now ready to use this system DSN for your application!
