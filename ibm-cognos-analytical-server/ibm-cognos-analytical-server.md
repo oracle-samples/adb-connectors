@@ -3,7 +3,7 @@
 
 | Validation Matrix  | Version  |
 | ------------- | ------------- |
-| AIBM Cognos  Analytics  | Cognos 11.0.x and higher.   and JDBC 11.1. X or  higher  |
+| IBM Cognos  Analytics  | Cognos 11.0.13 and higher.   and JDBC 11.1. X or  higher  |
 | JDBC Drive  | Oracle JDBC Driver 18.3  |
 
 ### **Prerequisites**
